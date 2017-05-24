@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.Window;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class splash_screen extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 3500;
 
@@ -24,8 +26,12 @@ public class splash_screen extends AppCompatActivity {
 
         //creating textviews and custom fonts
         TextView app_name = (TextView) findViewById(R.id.appName);
+        TextView loading = (TextView) findViewById(R.id.loading_text);
+
         Typeface RalewayRegular = Typeface.createFromAsset(getAssets(), "fonts/Raleway-Regular.ttf");
+
         app_name.setTypeface(RalewayRegular);
+        loading.setTypeface(RalewayRegular);
 
         //handler for splashscreen
         new Handler().postDelayed(new Runnable(){

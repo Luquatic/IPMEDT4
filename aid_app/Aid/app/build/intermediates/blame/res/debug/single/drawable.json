@@ -36,6 +36,10 @@
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
+        "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_arrow.png",
+        "source": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\src\\main\\res\\drawable\\back_arrow.png"
+    },
+    {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
