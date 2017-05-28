@@ -1,0 +1,16 @@
+node_modules
+dist
+.tmp
+bower_components
+opdrachten/test/
+Adviesrapport.docx
+~$viesrapport.docx
+
+# Geen .idea/ map van Jetbrain.
+.idea/
+
+# Geen zipmappen.
+*.zip
+
+# Vendor map is nodig
+!app/scripts/vendor/
