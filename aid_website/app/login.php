@@ -1,3 +1,22 @@
+<?php
+
+require_once('connect.php');
+if(isset($_POST) & !empty($_POST)) {
+  $id = $_POST['id'];
+  $password = $_POST['password'];
+
+  $sql = " SELECT * FROM users WHERE id='$id' AND password='$password' ";
+  $result = mysqli_query($connection, $sql);
+  $count = mysqli_num_rows($result);
+  if($count == 1) {
+    header('location: connect.php');
+  } else {
+    $fmsg = "Verkeerde inlog gegevens";
+  }
+}
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="">
   <head>
@@ -30,14 +49,15 @@
     <div class="loginBox">
       <h1>Welkom bij</h1>
       <img src="images/aid_logo.png">
-      <form method="post">
+      <form method="POST">
         <div class="formInput">
-          <input type="text" name="u" placeholder="Klantnummer" required="required" onfocus="this.placeholder =''" onblur="this.placeholder = 'Klantnummer'"/>
+          <input type="text" name="id" placeholder="Klantnummer" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Klantnummer'"/>
         </div>
         <div class="formInput">
-          <input type="password" name="p" placeholder="Code" required="required" onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
+          <input type="password" name="password" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
         </div>
-        <a href="https://www.linkedin.com/in/jessey-fransen-18b25bb9/" class="btn btnLogin">LOGIN</a>
+        <?php if(isset($fmsg)) { ?> <div class="alert alertFailure" role="alert"> <?php echo $fmsg; ?> </div> <?php } ?>
+        <button class="btn btnLogin" type="submit">LOGIN</button>
       </form>
     </div>
 

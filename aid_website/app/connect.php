@@ -9,4 +9,5 @@ $select_db = mysqli_select_db($connection, 'aid');
 if(!$select_db) {
     die("Database selection failed" . mysqli_error($select_db));
 }
+
 ?>
