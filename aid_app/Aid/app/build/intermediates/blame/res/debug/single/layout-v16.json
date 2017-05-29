@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\layout-v16\\notification_template_custom_big.xml"
+    },
+    {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16\\notification_template_custom_big.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\layout-v16\\notification_template_custom_big.xml"
     }

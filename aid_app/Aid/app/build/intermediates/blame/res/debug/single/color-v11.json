@@ -1,6 +1,14 @@
 [
     {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {

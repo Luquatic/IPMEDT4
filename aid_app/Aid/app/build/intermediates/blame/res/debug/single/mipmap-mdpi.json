@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },

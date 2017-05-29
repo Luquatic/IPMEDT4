@@ -20,20 +20,21 @@ public class splash_screen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        //method to hide actionbar from activityview
+        // method to hide actionbar from activity
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        //creating textviews and custom fonts
+        // creating textviews and custom fonts
         TextView app_name = (TextView) findViewById(R.id.appName);
         TextView loading = (TextView) findViewById(R.id.loading_text);
 
+        // initializing the custom font
         Typeface RalewayRegular = Typeface.createFromAsset(getAssets(), "fonts/Raleway-Regular.ttf");
 
         app_name.setTypeface(RalewayRegular);
         loading.setTypeface(RalewayRegular);
 
-        //handler for splashscreen
+        // handler for splashscreen (redirects splashscreen to webview activity after 3500 seconds
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
