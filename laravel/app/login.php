@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class klant extends Model
+class login extends Model
 {
     //
 }

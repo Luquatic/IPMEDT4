@@ -18,7 +18,6 @@ class CreateKlantenTable extends Migration
             $table->integer('klant_id');
             $table->string('naam');
             $table->string('wachtwoord');
-            $table->unique('user_id');
         });
     }
 
