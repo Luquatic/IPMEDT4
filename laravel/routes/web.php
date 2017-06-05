@@ -15,5 +15,3 @@ Route::get('/', 'loginController@index');
 Route::get('/register', 'RegistrationController@create');
 Route::get('/register', 'RegistrationController@store');
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
