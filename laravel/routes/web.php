@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'loginController@index');
+Route::get('/register', 'RegistrationController@create');
