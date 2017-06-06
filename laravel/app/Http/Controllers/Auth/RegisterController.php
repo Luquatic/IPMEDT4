@@ -51,7 +51,7 @@ class RegisterController extends Controller
             'klant_id' => 'required|integer',
             'voornaam' => 'required|string|max:255',
             'achternaam' => 'required|string|max:255',
-            'wachtwoord' => 'required|string|min:4|confirmed',
+            'password' => 'required|string|min:4|confirmed',
         ]);
     }
 
@@ -67,7 +67,7 @@ class RegisterController extends Controller
             'klant_id' => $data['klant_id'],
             'voornaam' => $data['voornaam'],
             'achternaam' => $data['achternaam'],
-            'wachtwoord' => bcrypt($data['wachtwoord']),
+            'password' => bcrypt($data['password']),
         ]);
     }
 }

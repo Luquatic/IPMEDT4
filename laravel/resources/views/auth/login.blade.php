@@ -11,7 +11,7 @@
         </div>
 
         <div class="formInput">
-            <input type="password" name="wachtwoord" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
+            <input type="password" name="password" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
         </div>
 
         <button class="btn btnLogin" type="submit">INLOGGEN</button>

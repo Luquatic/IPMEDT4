@@ -3,9 +3,9 @@
 //require_once('connect.php');
 if(isset($_POST) & !empty($_POST)) {
     $id = $_POST['id'];
-    $password = $_POST['wachtwoord'];
+    $password = $_POST['password'];
 
-    $sql = " SELECT * FROM klanten WHERE id='$id' AND wachtwoord='wachtwoord' ";
+    $sql = " SELECT * FROM klanten WHERE id='$id' AND password='password' ";
     $result = mysqli_query($connection, $sql);
     $count = mysqli_num_rows($result);
     if($count == 1) {
