@@ -11,7 +11,7 @@
             <input type="password" name="wachtwoord" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
         </div>
 
-        <?php if(isset($fmsg)) { ?> <div class="alert alertFailure" role="alert"> <?php echo $fmsg; ?> </div> <?php } ?>
+        @include('errors')
         <button class="btn btnLogin" type="submit">INLOGGEN</button>
 
     </form>

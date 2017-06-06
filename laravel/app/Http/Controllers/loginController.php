@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class loginController extends Controller
 {
     public function __construct() {
-        $this->middleware('guest');
+        $this->middleware('guest', ['except' => 'destroy']);
     }
 
     public function create() {
@@ -16,15 +17,17 @@ class loginController extends Controller
 
     public function store() {
         if (! auth()->attempt(request(['id', 'wachtwoord']))) {
-            return back();
+            return back()->withErrors([
+                'message' => 'Verkeerde inlog gegevens'
+            ]);
         }
 
-        return redirect('/homeController');
+        return redirect('/home');
     }
 
     public function destroy() {
         auth()->logout();
 
-        return redirect('/homeController');
+        return redirect('/home');
     }
 }

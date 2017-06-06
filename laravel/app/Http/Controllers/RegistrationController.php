@@ -27,6 +27,6 @@ class RegistrationController extends Controller
         auth()->login($klant);
 
         //Redirect
-        return redirect('/homeController');
+        return redirect('/home');
     }
 }
