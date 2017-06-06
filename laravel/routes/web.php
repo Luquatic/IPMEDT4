@@ -18,6 +18,6 @@ Route::get('/lougout', 'loginController@destroy');
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
 
-Route::get('/homeController', 'homeController@create');
+Route::get('/home', 'homeController@create');
 
 Auth::routes();

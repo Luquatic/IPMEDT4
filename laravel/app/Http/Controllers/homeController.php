@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class homeController extends Controller
 {
     public function create() {
-        return view('layouts.welkom');
+        return view('layouts.home');
     }
 }
