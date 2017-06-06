@@ -6,20 +6,15 @@ use Illuminate\Http\Request;
 
 class loginController extends Controller
 {
-    public function __construct() {
-        $this->middleware('guest');
-    }
-
-    public function create() {
+    public function index() {
         return view('auth.login');
     }
 
-    public function store() {
-        if (! auth()->attempt(request(['id', 'wachtwoord']))) {
-            return back();
-        }
-
-        return redirect('/home');
+    public function login() {
+        $this->validate(request(), [
+           'id' => 'required',
+            'wachtwoord' => 'required'
+        ]);
     }
 
     public function destroy() {

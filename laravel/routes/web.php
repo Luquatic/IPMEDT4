@@ -11,11 +11,7 @@
 |
 */
 
-Route::get('/', 'loginController@create');
-Route::get('/', 'loginController@store');
-Route::get('/lougout', 'loginController@destroy');
-
+Route::get('/', 'loginController@index');
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
-
 Auth::routes();
