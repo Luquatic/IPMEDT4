@@ -15,7 +15,7 @@ class CreateKlantenTable extends Migration
     {
         Schema::create('klanten', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('klant_id');
+            $table->integer('klant_id')->unique();
             $table->string('voornaam');
             $table->string('achternaam');
             $table->string('wachtwoord');
