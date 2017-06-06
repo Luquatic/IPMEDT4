@@ -5,7 +5,7 @@
 
     <img src="/images/aid_logo.png">
 
-    <form method="POST" action="{{ route('login') }}">
+    <form method="POST" action="/">
 
         <div class="formInput">
             <input type="text" name="id" placeholder="Klantnummer" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Klantnummer'"/>
