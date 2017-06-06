@@ -37,6 +37,10 @@ if(isset($_POST) & !empty($_POST)) {
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <div class="loginBox">
+    <h1>Welkom bij</h1>
+
+    <img src="/images/aid_logo.png">
+
     @yield ('content')
 </div>
 

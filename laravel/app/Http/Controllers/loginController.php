@@ -6,15 +6,27 @@ use Illuminate\Http\Request;
 
 class loginController extends Controller
 {
+
     public function index() {
         return view('auth.login');
     }
 
-    public function login() {
-        $this->validate(request(), [
-           'id' => 'required',
-            'wachtwoord' => 'required'
-        ]);
+//    public function __construct() {
+//        $this->middleware('guest', ['except' => 'destroy']);
+//    }
+
+    public function create() {
+        return view('auth.login');
+    }
+
+    public function store() {
+        if (! auth()->attempt(request(['id', 'wachtwoord']))) {
+            return back()->withErrors([
+                'message' => 'Verkeerde inlog gegevens'
+            ]);
+        }
+
+        return redirect('/home');
     }
 
     public function destroy() {
