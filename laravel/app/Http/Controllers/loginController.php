@@ -13,7 +13,13 @@ class loginController extends Controller
     public function login() {
         $this->validate(request(), [
            'id' => 'required',
-            'password' => 'required'
+            'wachtwoord' => 'required'
         ]);
+    }
+
+    public function destroy() {
+        auth()->logout();
+
+        return redirect('/home');
     }
 }

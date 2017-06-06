@@ -9,13 +9,15 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    protected $table = 'klanten';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'naam', 'voornaam', 'achternaam', 'wachtwoord',
+        'id', 'voornaam', 'achternaam', 'wachtwoord',
     ];
 
     /**

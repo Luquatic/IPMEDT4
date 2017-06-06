@@ -25,7 +25,16 @@
             <input type="password" name="wachtwoord" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
         </div>
 
-        <?php if(isset($fmsg)) { ?> <div class="alert alertFailure" role="alert"> <?php echo $fmsg; ?> </div> <?php } ?>
+        <!--  Error handle -->
+        @if($errors->any())
+            <div class="row collapse">
+                <ul class="alert-box warning radius">
+                    @foreach($errors->all() as $error)
+                        <li> {{ $error }} </li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
         <button class="btn btnRegister" type="submit">REGISTREREN</button>
     </form>
