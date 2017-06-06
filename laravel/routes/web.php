@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', 'loginController@create');
+Auth::routes();
 
+Route::get('/', 'loginController@create');
 Route::post('/', 'loginController@store');
+
 Route::get('/logout', 'loginController@destroy');
 
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
 
 Route::get('/home', 'homeController@create');
-
-Auth::routes();
