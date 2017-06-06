@@ -1,5 +1,6 @@
 package ipmedt4.aid;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -64,6 +65,15 @@ public class webview_activity extends AppCompatActivity {
                     }
                 }
                 return false;
+            }
+        });
+
+        // custom chat button
+        FloatingActionButton chat_button = (FloatingActionButton) findViewById(R.id.chat_button);
+        chat_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(webview_activity.this, chat_activity.class));
             }
         });
     }

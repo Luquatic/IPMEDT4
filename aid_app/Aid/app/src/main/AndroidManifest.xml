@@ -18,7 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".webview_activity"></activity>
+        <activity android:name=".webview_activity" />
+        <activity android:name=".chat_activity" />
+        <activity android:name=".ChatRoom"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "367477132219",
+    "firebase_url": "https://chatipmedt4.firebaseio.com",
+    "project_id": "chatipmedt4",
+    "storage_bucket": "chatipmedt4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367477132219:android:443f3a260228e3a7",
+        "android_client_info": {
+          "package_name": "ipmedt4.aid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367477132219-b3v1pgmu98j3odgj2vcdmo8nd5eii7u2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ipmedt4.aid",
+            "certificate_hash": "32fe02a5f3dab548f7f978e6402f3899e5643bb8"
+          }
+        },
+        {
+          "client_id": "367477132219-q07luv1e0ouiqn202hqcjevr8fumq8s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrNSQsENCcjbnhWfwYxN7gC6AA07397dM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367477132219-q07luv1e0ouiqn202hqcjevr8fumq8s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

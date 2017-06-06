@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Bram\\.android\\build-cache\\29a0fdd2492ef89e92d683be18889011726addd7\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     },
     {
+        "merged": "C:\\Users\\Bram\\Desktop\\aid_app_v2\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\29a0fdd2492ef89e92d683be18889011726addd7\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
+    },
+    {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\29a0fdd2492ef89e92d683be18889011726addd7\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
@@ -13,6 +17,10 @@
     },
     {
         "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\29a0fdd2492ef89e92d683be18889011726addd7\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bram\\Desktop\\aid_app_v2\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\29a0fdd2492ef89e92d683be18889011726addd7\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     }
 ]
