@@ -19,12 +19,12 @@ class loginController extends Controller
             return back();
         }
 
-        return redirect('/home');
+        return redirect('/homeController');
     }
 
     public function destroy() {
         auth()->logout();
 
-        return redirect('/home');
+        return redirect('/homeController');
     }
 }
