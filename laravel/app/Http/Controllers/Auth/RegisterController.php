@@ -48,7 +48,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'id' => 'required|string|max:255',
+            'klant_id' => 'required|integer',
             'voornaam' => 'required|string|max:255',
             'achternaam' => 'required|string|max:255',
             'wachtwoord' => 'required|string|min:4|confirmed',
@@ -64,7 +64,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'id' => $data['id'],
+            'klant_id' => $data['klant_id'],
             'voornaam' => $data['voornaam'],
             'achternaam' => $data['achternaam'],
             'wachtwoord' => bcrypt($data['wachtwoord']),

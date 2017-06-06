@@ -12,7 +12,7 @@ class loginController extends Controller
     }
 
     public function store() {
-        if (! auth()->attempt(request(['id', 'wachtwoord']))) {
+        if (! auth()->attempt(request(['klant_id', 'wachtwoord']))) {
             return back()->withErrors([
                 'message' => 'Verkeerde inlog gegevens'
             ]);
