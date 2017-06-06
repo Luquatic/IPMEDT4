@@ -20,7 +20,7 @@
         <div class="formInput">
             <input type="password" name="wachtwoord" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
         </div>
-        
+
         @include('layouts.errors')
 
         <button class="btn btnRegister" type="submit">REGISTREREN</button>

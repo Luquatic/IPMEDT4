@@ -2,10 +2,6 @@
 
 @section('content')
 
-    <h1>Welkom bij</h1>
-
-    <img src="/images/aid_logo.png">
-
     <form method="POST" action="/">
 
         <div class="formInput">
