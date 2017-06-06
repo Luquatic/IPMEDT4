@@ -15,7 +15,7 @@ return [
 
     'defaults' => [
         'guard' => 'web',
-        'passwords' => 'klanten',
+        'passwords' => 'users',
     ],
 
     /*
@@ -38,12 +38,12 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'klanten',
+            'provider' => 'users',
         ],
 
         'api' => [
             'driver' => 'token',
-            'provider' => 'klanten',
+            'provider' => 'users',
         ],
     ],
 
@@ -65,7 +65,7 @@ return [
     */
 
     'providers' => [
-        'klanten' => [
+        'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
@@ -92,8 +92,8 @@ return [
     */
 
     'passwords' => [
-        'klanten' => [
-            'provider' => 'klanten',
+        'users' => [
+            'provider' => 'users',
             'table' => 'password_resets',
             'expire' => 60,
         ],
