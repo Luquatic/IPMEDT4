@@ -16,7 +16,6 @@
             <input type="password" name="wachtwoord" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
         </div>
 
-        @include('errors')
         <button class="btn btnLogin" type="submit">INLOGGEN</button>
 
     </form>

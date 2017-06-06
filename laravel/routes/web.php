@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'loginController@create');
+
 Route::post('/', 'loginController@store');
 Route::get('/logout', 'loginController@destroy');
 
