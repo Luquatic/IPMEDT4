@@ -4,8 +4,6 @@
 
     <form method="POST" action="/">
 
-        {!! csrf_field() !!}
-
         <div class="formInput">
             <input type="text" name="klant_id" placeholder="Klantnummer" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Klantnummer'"/>
         </div>
