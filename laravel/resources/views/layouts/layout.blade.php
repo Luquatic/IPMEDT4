@@ -32,6 +32,7 @@ if(isset($_POST) & !empty($_POST)) {
     <link rel="stylesheet" href=/css/login.css>
     <!-- endbuild -->
 
+    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
 <body>
@@ -54,6 +55,13 @@ if(isset($_POST) & !empty($_POST)) {
         e.src='https://www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+<!-- CSRF Token Script -->
+<script>
+    window.Laravel = <?php echo json_encode([
+        'csrfToken' => csrf_token(),
+    ]); ?>
 </script>
 
 <!-- build:js scripts/main.js -->
