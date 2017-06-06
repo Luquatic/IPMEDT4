@@ -31,6 +31,8 @@ if(isset($_POST) & !empty($_POST)) {
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href=/css/login.css>
     <!-- endbuild -->
+
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
 <body>
 <!--[if IE]>

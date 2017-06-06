@@ -4,8 +4,6 @@
 
     <form method="POST" action="/">
 
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
         <div class="formInput">
             <input type="text" name="klant_id" placeholder="Klantnummer" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Klantnummer'"/>
         </div>
