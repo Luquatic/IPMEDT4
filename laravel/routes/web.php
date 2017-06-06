@@ -13,7 +13,7 @@
 
 Route::get('/', 'loginController@create');
 Route::post('/', 'loginController@store');
-Route::get('/lougout', 'loginController@destroy');
+Route::get('/logout', 'loginController@destroy');
 
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
