@@ -21,7 +21,7 @@ class RegistrationController extends Controller
         ]);
 
         //Create and save the user
-        $klant = User::create(request(['klant_id', 'voornaam', 'achternaam', 'password']));
+        $klant = User::create(request(['klant_id', 'voornaam', 'achternaam', bcrypt('password')]));
 
         //Sign them in
         auth()->login($klant);
