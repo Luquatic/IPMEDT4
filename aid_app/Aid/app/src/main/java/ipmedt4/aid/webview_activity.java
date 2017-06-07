@@ -29,7 +29,8 @@ public class webview_activity extends AppCompatActivity {
         webviewer.setWebViewClient(new WebViewClient());
 
         // url to load in webview
-        webviewer.loadUrl("http://www.google.com/");
+        webviewer.getSettings().setJavaScriptEnabled(true);
+        webviewer.loadUrl("http://www.kasperdevries.nl/");
 
         // custom return button to go back one page
         FloatingActionButton return_button = (FloatingActionButton) findViewById(R.id.back_button);

@@ -3257,7 +3257,7 @@ containing a value of this type.
         public static final int add_button=0x7f0d0082;
         public static final int adjust_height=0x7f0d0041;
         public static final int adjust_width=0x7f0d0042;
-        public static final int aid_webview=0x7f0d008e;
+        public static final int aid_webview=0x7f0d008c;
         public static final int alertTitle=0x7f0d0066;
         public static final int all=0x7f0d0014;
         public static final int always=0x7f0d0043;
@@ -3273,7 +3273,7 @@ containing a value of this type.
         public static final int center_horizontal=0x7f0d0030;
         public static final int center_vertical=0x7f0d0031;
         public static final int chains=0x7f0d0016;
-        public static final int chat_button=0x7f0d008c;
+        public static final int chat_button=0x7f0d008e;
         public static final int checkbox=0x7f0d0069;
         public static final int chronometer=0x7f0d00a7;
         public static final int clip_horizontal=0x7f0d003a;
