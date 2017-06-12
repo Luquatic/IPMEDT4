@@ -14,9 +14,7 @@
             <input type="password" name="password" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
         </div>
 
-        @if($errors->any())
-            <h4>{{$errors->first()}}</h4>
-        @endif
+        @extends('layouts.errors')
 
         <button class="btn btnLogin" type="submit">INLOGGEN</button>
 
