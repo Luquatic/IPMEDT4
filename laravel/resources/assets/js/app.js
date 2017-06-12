@@ -5,9 +5,11 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require('quasar-framework/dist/quasar.mat.css');
 
-window.Vue = require('vue');
+import Quasar from 'quasar-framework';
+
+Vue.use(Quasar);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,7 +17,7 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/app.vue'));
+Vue.component('app', require('./components/app.vue'));
 
 const app = new Vue({
     el: '#app'
