@@ -6,6 +6,10 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+<<<<<<< HEAD
+=======
+        "barryvdh/laravel-ide-helper": "^2.3",
+>>>>>>> master
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0"
     },

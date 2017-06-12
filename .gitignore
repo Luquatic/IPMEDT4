@@ -3,8 +3,6 @@ dist
 .tmp
 bower_components
 opdrachten/test/
-Adviesrapport.docx
-~$viesrapport.docx
 
 # Geen .idea/ map van Jetbrain.
 .idea/
@@ -14,3 +12,5 @@ Adviesrapport.docx
 
 # Vendor map is nodig
 !app/scripts/vendor/
+
+_ide_helper.php

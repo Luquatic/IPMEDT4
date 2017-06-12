@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,3 +19,16 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+=======
+Auth::routes();
+
+Route::get('/', 'loginController@create');
+Route::post('/', 'loginController@store');
+
+Route::get('/logout', 'loginController@destroy');
+
+Route::get('/register', 'RegistrationController@create');
+Route::post('/register', 'RegistrationController@store');
+
+Route::get('/home', 'homeController@create');
+>>>>>>> master
