@@ -19,7 +19,7 @@ Vue.use(Quasar);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('app', require('/resources/assets/js/components/app.vue'));
+Vue.component('app', require('./components/app.vue'));
 
 const app = new Vue({
     el: '#app'
