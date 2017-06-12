@@ -1,0 +1,122 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "quasar-cli",
+        "scope": null,
+        "escapedName": "quasar-cli",
+        "name": "quasar-cli",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\xampp\\htdocs\\Aid\\laravel"
+    ]
+  ],
+  "_from": "quasar-cli@latest",
+  "_id": "quasar-cli@0.6.1",
+  "_inCache": true,
+  "_location": "/quasar-cli",
+  "_nodeVersion": "4.2.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/quasar-cli-0.6.1.tgz_1491324942491_0.35210028872825205"
+  },
+  "_npmUser": {
+    "name": "rstoenescu",
+    "email": "razvan.stoenescu@gmail.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "quasar-cli",
+    "scope": null,
+    "escapedName": "quasar-cli",
+    "name": "quasar-cli",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/quasar-cli/-/quasar-cli-0.6.1.tgz",
+  "_shasum": "d3b3e2055fef3831d4c4e88140705f1cdee1d16f",
+  "_shrinkwrap": null,
+  "_spec": "quasar-cli",
+  "_where": "C:\\xampp\\htdocs\\Aid\\laravel",
+  "author": {
+    "name": "Razvan Stoenescu",
+    "email": "razvan.stoenescu@gmail.com",
+    "url": "https://github.com/rstoenescu"
+  },
+  "bin": {
+    "quasar": "./bin/quasar"
+  },
+  "bugs": {
+    "url": "https://github.com/rstoenescu/quasar-cli/issues"
+  },
+  "dependencies": {
+    "browser-sync": "^2.13.0",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "download-git-repo": "^0.2.1",
+    "eslint": "^3.9.1",
+    "find-root": "^1.0.0",
+    "fs-extra": "^1.0.0",
+    "glob": "^7.0.5",
+    "gulp-watch": "^4.3.8",
+    "inquirer": "^1.1.2",
+    "log-symbols": "^1.0.2",
+    "mkdirp": "^0.5.1",
+    "ora": "^0.3.0",
+    "os": "^0.1.1",
+    "qrcode-terminal": "^0.11.0",
+    "request": "^2.73.0",
+    "uid": "0.0.2",
+    "update-notifier": "^1.0.2"
+  },
+  "description": "Quasar Framework CLI",
+  "devDependencies": {
+    "eslint": "^3.0.1",
+    "eslint-config-standard": "^6.0.0-beta.0",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "d3b3e2055fef3831d4c4e88140705f1cdee1d16f",
+    "tarball": "https://registry.npmjs.org/quasar-cli/-/quasar-cli-0.6.1.tgz"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "gitHead": "5e18c51765bab2296cc60283196bf784418b666b",
+  "homepage": "http://quasar-framework.org",
+  "keywords": [
+    "quasar",
+    "cli",
+    "web",
+    "spa"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "rstoenescu",
+      "email": "razvan.stoenescu@gmail.com"
+    }
+  ],
+  "name": "quasar-cli",
+  "optionalDependencies": {},
+  "preferGlobal": true,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rstoenescu/quasar-cli.git"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "version": "0.6.1"
+}
