@@ -4,6 +4,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+// require(`quasar/dist/quasar.${__THEME}.css`);
 require('./bootstrap');
 require('quasar-framework/dist/quasar.mat.css');
 
