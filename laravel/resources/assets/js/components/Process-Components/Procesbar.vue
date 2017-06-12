@@ -4,7 +4,6 @@
     <p>
       <q-progress :percentage="progress" class="stripe animate" style="height: 45px;"></q-progress>
     </p>
-
   </div>
 
 </template>

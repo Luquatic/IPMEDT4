@@ -1,8 +1,5 @@
 <template>
-    <!-- Don't drop "q-app" class -->
-    <div id="app">
-        <app-index></app-index>
-    </div>
+
 </template>
 
 <script>
