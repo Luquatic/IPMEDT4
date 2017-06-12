@@ -15635,7 +15635,8 @@ __webpack_require__(131);
 
 
 
-Vue.use(__WEBPACK_IMPORTED_MODULE_0_quasar_framework___default.a);
+// Vue.use(__WEBPACK_IMPORTED_MODULE_0_quasar_framework___default.a);
+Vue.use(Quasar);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
