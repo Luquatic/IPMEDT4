@@ -15,7 +15,7 @@
         </div>
 
         <div class="errorBox">
-            @section('layouts.errors')
+            @extends('layouts.errors')
         </div>
 
 
