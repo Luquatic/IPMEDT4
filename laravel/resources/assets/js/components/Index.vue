@@ -7,9 +7,9 @@
 </template>
 
 <script>
-  import Header from 'Header.vue'
-  import Procesbar from 'Process-Components/Procesbar.vue'
-  import ProcesList from 'Process-Components/ProcesList.vue'
+  import Header from './Header.vue'
+  import Procesbar from './Process-Components/Procesbar.vue'
+  import ProcesList from './Process-Components/ProcesList.vue'
 
   export default{
     components: {

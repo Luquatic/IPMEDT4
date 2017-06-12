@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import ProcesContent from 'ProcesContent.vue'
+  import ProcesContent from './ProcesContent.vue'
 
   export default{
     components: {

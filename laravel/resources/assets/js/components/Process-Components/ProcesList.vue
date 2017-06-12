@@ -10,8 +10,8 @@
 
 <script>
   /* eslint-disable */
-  import ProcesHeader from 'ProcesHeader.vue'
-  import ProcesContent from 'ProcesContent.vue'
+  import ProcesHeader from './ProcesHeader.vue'
+  import ProcesContent from './ProcesContent.vue'
 
 
   export default{

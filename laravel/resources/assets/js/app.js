@@ -5,7 +5,7 @@
  */
 
 require('./bootstrap');
-require('quasar-framework/dist/quasar.mat.css');
+// require('quasar-framework/dist/quasar.mat.css');
 
 import Quasar from 'quasar-framework';
 
