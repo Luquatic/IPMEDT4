@@ -17963,6 +17963,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -59104,7 +59105,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "q-app"
     }
-  })
+  }, [_c('app-index')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

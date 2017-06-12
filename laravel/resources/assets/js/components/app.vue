@@ -1,6 +1,7 @@
 <template>
+    <!-- Don't drop "q-app" class -->
     <div id="q-app">
-        
+        <app-index></app-index>
     </div>
 </template>
 
