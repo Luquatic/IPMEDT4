@@ -35,13 +35,6 @@ body {
         color: white;
         margin-bottom: 0;
     }
-    #loginErrorBox {
-        h4 {
-            color: red;
-            font-family: Arial;
-            border: solid 1px;
-        }
-    }
     img {
         width: 18%;
         position: relative;
@@ -84,6 +77,14 @@ body {
     .btn:hover {
         background-color: white;
         color: #4A8AA4;
+    }
+}
+
+#loginErrorBox {
+    h4 {
+        color: red;
+        font-family: Arial;
+        border: solid 1px;
     }
 }
 
