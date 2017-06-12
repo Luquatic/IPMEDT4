@@ -7,9 +7,17 @@
 
 require('quasar-framework/dist/quasar.mat.css');
 
+import App from './components/app.vue';
 import Quasar from 'quasar-framework';
 
 Vue.use(Quasar);
+
+Quasar.start(function(){
+    new Vue({ // eslint-disable-line no-new
+        el: '#q-app',
+        render: (h) => h(App)
+    })
+});
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
