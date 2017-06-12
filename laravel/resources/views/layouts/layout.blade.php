@@ -46,7 +46,7 @@
 </script>
 
 <!-- build:js scripts/main.js -->
-<script src="../../../public/js/login.js"></script>
+<script src="/public/js/login.js"></script>
 <!-- endbuild -->
 </body>
 </html>
