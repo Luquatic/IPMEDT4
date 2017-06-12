@@ -2,7 +2,7 @@
   <div>
     <!-- Item 0 : Aankomst-->
     <div v-if="id == 0">
-      <img src="../assets/lumc.jpg" class="responsive">
+      <img src="/images/lumc.jpg" class="responsive">
       <hr>
       <div>
         Welkom bij het LUMC!
@@ -33,7 +33,7 @@
       Tijdens het maken van de foto word er duidelijk wat
       voor soort breuk je hebt.
       <hr>
-      <img src="../assets/botbreuken.jpg" class="responsive">
+      <img src="/images/botbreuken.jpg" class="responsive">
       <hr>
       <div>
         Als er duidelijk is wat voor beenbreuk je hebt krijg je
