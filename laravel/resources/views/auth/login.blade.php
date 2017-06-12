@@ -15,7 +15,9 @@
         </div>
 
         @if($errors->any())
-            <h4>{{$errors->first()}}</h4>
+            <div id="loginErrorBox">
+                <h4>{{$errors->first()}}</h4>
+            </div>
         @endif
 
         <button class="btn btnLogin" type="submit">INLOGGEN</button>
