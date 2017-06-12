@@ -10,7 +10,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href=/css/login.css>
+    <link rel="stylesheet" href=/css/home.css>
     <!-- endbuild -->
 
     <!-- CSRF Token -->
