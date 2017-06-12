@@ -14,7 +14,10 @@
             <input type="password" name="password" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
         </div>
 
-        @section('layouts.errors')
+        <div class="errorBox">
+            @section('layouts.errors')
+        </div>
+
 
         <button class="btn btnLogin" type="submit">INLOGGEN</button>
 
