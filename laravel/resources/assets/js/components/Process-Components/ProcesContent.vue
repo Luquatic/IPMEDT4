@@ -80,7 +80,7 @@
 
 <script>
   import Video from './Video.vue'
-  import { Dialog, Toast } from 'quasar'
+//  import { Dialog, Toast } from 'quasar'
 
   export default{
     props: ['id'],
