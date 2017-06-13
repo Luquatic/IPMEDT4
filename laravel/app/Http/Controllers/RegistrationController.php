@@ -17,11 +17,11 @@ class RegistrationController extends Controller
             'klant_id' => 'required',
             'voornaam' => 'required',
             'achternaam' => 'required',
-            bcrypt('password') => 'required'
+            'password' => 'required'
         ]);
 
         //Create and save the user
-        $klant = User::create(request(['klant_id', 'voornaam', 'achternaam', 'password']));
+        $klant = User::create(request(['klant_id', 'voornaam', 'achternaam', bcrypt('password')]));
 
         //Sign them in
         auth()->login($klant);
