@@ -12,7 +12,7 @@ class loginController extends Controller
     }
 
     public function store() {
-        if (! auth()->attempt(request(['klant_id', 'password']))) {
+        if (! auth()->attempt(request(['klant_id', bcrypt('password')]))) {
             return back()->withErrors([
                 'message' => 'Verkeerde klantnummer en/of code'
             ]);
