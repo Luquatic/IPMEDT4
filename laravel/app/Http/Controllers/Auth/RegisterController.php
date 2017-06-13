@@ -67,7 +67,7 @@ class RegisterController extends Controller
             'klant_id' => $data['klant_id'],
             'voornaam' => $data['voornaam'],
             'achternaam' => $data['achternaam'],
-            'password' => $data['password'],
+            'password' => $data[bcrypt('password')],
         ]);
     }
 }
