@@ -17,7 +17,7 @@ class RegistrationController extends Controller
             'klant_id' => 'required',
             'voornaam' => 'required',
             'achternaam' => 'required',
-            'password' => 'required'
+            bcrypt('password') => 'required'
         ]);
 
         //Create and save the user
