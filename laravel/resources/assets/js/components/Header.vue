@@ -2,9 +2,7 @@
   <div class="toolbar secondary">
     <button><i>assignment_ind</i></button>
     <q-toolbar-title :padding="2">
-      @if (Auth::check())
-        <a class="toolbarTitle" href="#">{{ Auth::user()->voornaam }}</a>
-      @endif
+      Aid - Welkom {{voornaam}}
     </q-toolbar-title>
     <button><i>leg</i></button>
   </div>

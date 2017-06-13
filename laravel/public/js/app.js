@@ -59063,7 +59063,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "padding": 2
     }
-  }, [_vm._v("\n    Aid - Welkom " + _vm._s(_vm.name) + "\n  ")]), _vm._v(" "), _vm._m(1)], 1)
+  }, [_vm._v("\n    Aid - Welkom " + _vm._s(_vm.voornaam) + "\n  ")]), _vm._v(" "), _vm._m(1)], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('button', [_c('i', [_vm._v("assignment_ind")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
