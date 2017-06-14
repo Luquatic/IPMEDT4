@@ -77,6 +77,7 @@ class RegisterController extends Controller
                 'achternaam' => $data['achternaam'],
                 'password' => $data['password'],
             ]);
+            dd($klant);
             return $klant;
         } catch (QueryException $e) {
             $error_code = $e->errorInfo[1];
