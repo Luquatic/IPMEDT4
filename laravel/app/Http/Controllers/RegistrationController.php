@@ -26,7 +26,6 @@ class RegistrationController extends Controller
         //Sign them in
         auth()->login($klant);
 
-        //Redirect
         return redirect('/home');
     }
 }
