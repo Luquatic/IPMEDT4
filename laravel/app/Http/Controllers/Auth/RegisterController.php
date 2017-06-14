@@ -21,7 +21,7 @@ class RegisterController extends Controller
     |
     */
 
-    use RegistersUsers, ValidatesRequests;
+    use RegistersUsers;
 
     /**
      * Where to redirect users after registration.
@@ -69,16 +69,18 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         try {
-            return User::create([
-                'klant_id' => $data['klant_id'],
-                'voornaam' => $data['voornaam'],
-                'achternaam' => $data['achternaam'],
-                'password' => $data['password'],
-            ]);
-        }catch(\Exception $exception)
-        {
-            return $exception->errors()->all();
+        $klant = User::create([
+            'klant_id' => $data['klant_id'],
+            'voornaam' => $data['voornaam'],
+            'achternaam' => $data['achternaam'],
+            'password' => $data['password'],
+        ]);
+        return $klant;
+    } catch (Illuminate\Database\QueryException $e) {
+            $error_code = $e->errorInfo[1];
+            if ($error_code == 1062) {
+//                self::delete($lid);
+                return 'houston, we have a duplicate entry problem';
+            }
         }
-
-    }
 }
