@@ -44,46 +44,37 @@ class RegisterController extends Controller
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array $data
+     * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'klant_id' => 'required|integer|unique:klanten',
+            'klant_id' => 'required|integer|unique',
             'voornaam' => 'required|string|max:255',
             'achternaam' => 'required|string|max:255',
             'password' => 'required|string|min:4|',
         ]);
     }
 
-    protected function formatValidationErrors(Validator $validator)
-    {
+    protected function formatValidationErrors(Validator $validator) {
         return $validator->errors()->all();
     }
 
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array $data
+     * @param  array  $data
      * @return User
      */
     protected function create(array $data)
     {
-        try {
-            $klant = User::create([
-                'klant_id' => $data['klant_id'],
-                'voornaam' => $data['voornaam'],
-                'achternaam' => $data['achternaam'],
-                'password' => $data['password'],
-            ]);
-            dd($klant);
-            return $klant;
-        } catch (QueryException $e) {
-            $error_code = $e->errorInfo[1];
-            if ($error_code == 1062) {
-//                self::delete($lid);
-            }
-        }
+        $klant = User::create([
+            'klant_id' => $data['klant_id'],
+            'voornaam' => $data['voornaam'],
+            'achternaam' => $data['achternaam'],
+            'password' => $data['password'],
+        ]);
+        return $klant;
     }
 }
