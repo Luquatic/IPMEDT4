@@ -14,10 +14,10 @@ class RegistrationController extends Controller
     public function store() {
         //Validate the form
         $this->validate(request(), [
-            'klant_id' => 'required',
-            'voornaam' => 'required',
-            'achternaam' => 'required',
-            'password' => 'required'
+            'klant_id' => 'required|integer',
+            'voornaam' => 'required|string|max:255',
+            'achternaam' => 'required|string|max:255',
+            'password' => 'required|string|min:4|'
         ]);
 
         //Create and save the user

@@ -52,7 +52,7 @@ class RegisterController extends Controller
             'klant_id' => 'required|integer',
             'voornaam' => 'required|string|max:255',
             'achternaam' => 'required|string|max:255',
-            'password' => 'required|string|min:4|confirmed',
+            'password' => 'required|string|min:4|',
         ]);
     }
 
