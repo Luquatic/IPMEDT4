@@ -39,8 +39,13 @@
             </intent-filter>
         </activity>
         <activity android:name="ipmedt4.aid.webview_activity" />
-        <activity android:name="ipmedt4.aid.chat_activity" />
-        <activity android:name="ipmedt4.aid.ChatRoom" />
+        <activity
+            android:name="ipmedt4.aid.chat_activity"
+            android:parentActivityName="ipmedt4.aid.webview_activity" />
+        <activity
+            android:name="ipmedt4.aid.ChatRoom"
+            android:parentActivityName="ipmedt4.aid.chat_activity"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

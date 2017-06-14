@@ -1,10 +1,16 @@
 package ipmedt4.aid;
 
+import android.graphics.Typeface;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.firebase.database.ChildEventListener;
@@ -13,6 +19,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -31,10 +39,22 @@ public class ChatRoom extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_room);
 
+        // enable back button in toolbar (adding parentacitivity in manifest)
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // initializing custom font
+        Typeface RalewayRegular = Typeface.createFromAsset(getAssets(), "fonts/Raleway-Regular.ttf");
+
+
         // initializing variables of class
         sendButton = (Button) findViewById(R.id.send_button);
         messageInput = (EditText) findViewById(R.id.message_input);
         messageVieww = (TextView) findViewById(R.id.message_view);
+
+        // set custom font for elements
+        messageVieww.setTypeface(RalewayRegular);
+        sendButton.setTypeface(RalewayRegular);
+
 
         // get information from chat_activities' intent
         patientName = getIntent().getExtras().get("Gebruiker").toString();
@@ -46,9 +66,14 @@ public class ChatRoom extends AppCompatActivity {
         // get access to messages in database parentroom
         root = FirebaseDatabase.getInstance().getReference().child(roomName);
 
+        // send message
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Calendar time = Calendar.getInstance();
+                SimpleDateFormat time_format = new SimpleDateFormat("HH:mm");
+                String current_time = time_format.format(time.getTime());
+
                 // make randomkeys to make every textmessage unique
                 Map<String, Object> map = new HashMap<String, Object>();
                 tempKey = root.push().getKey();
@@ -61,8 +86,9 @@ public class ChatRoom extends AppCompatActivity {
                 // put name and message in map and append it to cdatabse
                 map2.put("Naam", patientName);
                 map2.put("Bericht", messageInput.getText().toString());
+                map2.put("Time", current_time);
                 message_root.updateChildren(map2);
-
+                messageInput.setText("");
             }   
         });
 
@@ -97,6 +123,7 @@ public class ChatRoom extends AppCompatActivity {
 
     private String user;
     private String message;
+    private String time;
 
     // method to get chat information from database and push it to the screen
 
@@ -106,9 +133,10 @@ public class ChatRoom extends AppCompatActivity {
         while (i.hasNext()) {
             message = (String) ((DataSnapshot)i.next()).getValue();
             user = (String) ((DataSnapshot)i.next()).getValue();
+            time = (String) ((DataSnapshot)i.next()).getValue();
 
             // the final layout that gets pushed to textview
-            messageVieww.append(user + ": " + message + "\n");
+            messageVieww.append("\n" + "(" + time + ") " + user + ": " + message + "\n" + "-----------------------");
         }
 
 
