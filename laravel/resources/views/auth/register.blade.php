@@ -21,13 +21,9 @@
             <input type="password" name="password" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
         </div>
 
-        @if (count($errors) > 0)
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
+        @if($errors->any())
+            <div id="loginErrorBox">
+                <h4>{{$errors->first()}}</h4>
             </div>
         @endif
 

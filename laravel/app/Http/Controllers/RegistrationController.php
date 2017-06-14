@@ -20,10 +20,11 @@ class RegistrationController extends Controller
             'password' => 'required'
         ]);
 
-//        $klant_id = \request('klant_id');
-//        $voornaam = \request('voornaam');
-//        $achternaam = \request('achternaam');
-//        $password = bcrypt(\request('password'));
+        if (validator()->fails()) {
+            return back()->withErrors([
+                'message' => 'error'
+            ]);
+        }
 
         //Create and save the user
         $klant = User::create(request(['klant_id', 'voornaam', 'achternaam', 'password']));
