@@ -21,7 +21,11 @@
             <input type="password" name="password" placeholder="Code" required onfocus="this.placeholder =''" onblur="this.placeholder = 'Code'"/>
         </div>
 
-        @include('layouts.errors')
+        @if($errors->any())
+            <div id="loginErrorBox">
+                <h4>{{$errors->first()}}</h4>
+            </div>
+        @endif
 
 
         <button class="btn btnRegister" type="submit">REGISTREREN</button>
