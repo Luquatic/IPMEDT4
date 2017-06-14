@@ -1,10 +1,9 @@
 <template>
   <div class="toolbar secondary">
-    <button><i>assignment_ind</i></button>
+    <img id="logo" src="/images/logo_app_2.png" alt="">
     <q-toolbar-title :padding="2">
-      Aid - Welkom {{voornaam}}
+      Aid - Welkom {{name}}
     </q-toolbar-title>
-    <button><i>leg</i></button>
   </div>
 
 </template>
@@ -21,4 +20,11 @@
 </script>
 
 <style>
+.toolbar.secondary{
+  background: #6ccbf0;
+}
+#logo{
+  width: 40px;
+  height: 40px;
+}
 </style>

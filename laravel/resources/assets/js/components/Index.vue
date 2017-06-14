@@ -21,4 +21,9 @@
 </script>
 
 <style>
+.row{
+  border-width: 3px;
+  margin: 0 !important;
+  padding:0 !important;
+}
 </style>
