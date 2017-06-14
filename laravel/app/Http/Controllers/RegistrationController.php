@@ -23,12 +23,6 @@ class RegistrationController extends Controller
         //Create and save the user
         $klant = User::create(request(['klant_id', 'voornaam', 'achternaam', 'password']));
 
-        if (validator()->fails()) {
-            return back()->withErrors([
-                'message' => 'error'
-            ]);
-        }
-
         //Sign them in
         auth()->login($klant);
 
