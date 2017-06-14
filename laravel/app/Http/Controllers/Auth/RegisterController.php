@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Database\QueryException;
 
 class RegisterController extends Controller
 {
@@ -43,7 +44,7 @@ class RegisterController extends Controller
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
@@ -56,31 +57,32 @@ class RegisterController extends Controller
         ]);
     }
 
-    protected function formatValidationErrors(Validator $validator) {
+    protected function formatValidationErrors(Validator $validator)
+    {
         return $validator->errors()->all();
     }
 
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return User
      */
     protected function create(array $data)
     {
         try {
-        $klant = User::create([
-            'klant_id' => $data['klant_id'],
-            'voornaam' => $data['voornaam'],
-            'achternaam' => $data['achternaam'],
-            'password' => $data['password'],
-        ]);
-        return $klant;
-    } catch (Illuminate\Database\QueryException $e) {
+            $klant = User::create([
+                'klant_id' => $data['klant_id'],
+                'voornaam' => $data['voornaam'],
+                'achternaam' => $data['achternaam'],
+                'password' => $data['password'],
+            ]);
+            return $klant;
+        } catch (QueryException $e) {
             $error_code = $e->errorInfo[1];
             if ($error_code == 1062) {
 //                self::delete($lid);
-                return 'houston, we have a duplicate entry problem';
             }
         }
+    }
 }
