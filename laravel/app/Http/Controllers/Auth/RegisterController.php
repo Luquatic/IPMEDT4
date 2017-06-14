@@ -77,9 +77,8 @@ class RegisterController extends Controller
             ]);
         }catch(\Exception $exception)
         {
-            $errormsg = 'Database error! ' . $exception->getCode();
+            return $exception->errors()->all();
         }
-        return Response::json(['success'=>$result,'errormsg'=>$errormsg]);
 
     }
 }
