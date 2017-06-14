@@ -55,6 +55,11 @@ class RegisterController extends Controller
         ]);
     }
 
+    protected function formatValidationErrors(Validator $validator)
+    {
+        return $validator->errors()->all();
+    }
+
     /**
      * Create a new user instance after a valid registration.
      *
