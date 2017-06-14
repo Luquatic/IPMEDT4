@@ -68,11 +68,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'klant_id' => $data['klant_id'],
-            'voornaam' => $data['voornaam'],
-            'achternaam' => $data['achternaam'],
-            'password' => $data['password'],
-        ]);
+        try {
+            return User::create([
+                'klant_id' => $data['klant_id'],
+                'voornaam' => $data['voornaam'],
+                'achternaam' => $data['achternaam'],
+                'password' => $data['password'],
+            ]);
+        }catch(\Exception $exception)
+        {
+            $errormsg = 'Database error! ' . $exception->getCode();
+        }
+        return Response::json(['success'=>$result,'errormsg'=>$errormsg]);
+
     }
 }
