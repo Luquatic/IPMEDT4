@@ -25,8 +25,6 @@ class RegistrationController extends Controller
         $achternaam = \request('achternaam');
         $password = bcrypt(\request('password'));
 
-        dd($klant_id, $voornaam, $achternaam, $password);
-        
         //Create and save the user
         $klant = User::create([$klant_id, $voornaam, $achternaam, $password]);
 
