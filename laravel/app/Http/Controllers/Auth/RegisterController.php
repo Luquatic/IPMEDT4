@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -20,7 +21,7 @@ class RegisterController extends Controller
     |
     */
 
-    use RegistersUsers;
+    use RegistersUsers, ValidatesRequests;
 
     /**
      * Where to redirect users after registration.
@@ -53,6 +54,10 @@ class RegisterController extends Controller
             'achternaam' => 'required|string|max:255',
             'password' => 'required|string|min:4|confirmed',
         ]);
+    }
+
+    protected function formatValidationErrors(Validator $validator) {
+        return $validator->errors()->all();
     }
 
     /**
