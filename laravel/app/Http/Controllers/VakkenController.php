@@ -12,7 +12,8 @@ class VakkenController extends Controller
     }
 
     public function jaar() {
-        $jaar = Vak::get('jaar');
-        return $jaar;
+        Vak::get([
+            'jaar' => \request('jaar')
+        ]);
     }
 }
