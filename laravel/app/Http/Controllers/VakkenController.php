@@ -13,6 +13,6 @@ class VakkenController extends Controller
 
     public function show($jaar) {
         $vak = Vak::find($jaar);
-        return $jaar;
+        return $vak;
     }
 }
