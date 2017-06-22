@@ -11,8 +11,7 @@ class VakkenController extends Controller
         return Vak::all();
     }
 
-    public function show($jaar) {
-        $vak = Vak::find($jaar);
-        return $vak;
+    public function jaar(Vak $jaar) {
+        return $jaar;
     }
 }
