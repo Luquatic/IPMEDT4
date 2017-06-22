@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/medtgrades','VakkenController@create');
 Route::get('/medtgrades/jaar/{jaar}', 'VakkenController@jaar');
+Route::get('/medtgrades/jaar/{jaar}/periode/{periode}', 'VakkenController@periode');
