@@ -10,4 +10,9 @@ class VakkenController extends Controller
     public function create() {
         return Vak::all();
     }
+
+    public function show($jaar) {
+        $jaar = Vak::find($jaar);
+        return $jaar;
+    }
 }
