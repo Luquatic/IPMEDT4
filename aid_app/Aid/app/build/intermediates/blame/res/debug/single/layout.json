@@ -276,6 +276,10 @@
         "source": "C:\\Users\\Bram\\.android\\build-cache\\29a0fdd2492ef89e92d683be18889011726addd7\\output\\res\\layout\\design_bottom_navigation_item.xml"
     },
     {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chat_room.xml",
+        "source": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\src\\main\\res\\layout\\activity_chat_room.xml"
+    },
+    {
         "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
@@ -440,6 +444,10 @@
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\layout\\notification_template_media.xml"
     },
     {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chat.xml",
+        "source": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\src\\main\\res\\layout\\activity_chat.xml"
+    },
+    {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app_v2\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_webview_activity.xml",
         "source": "C:\\Users\\Bram\\Desktop\\aid_app_v2\\Aid\\app\\src\\main\\res\\layout\\activity_webview_activity.xml"
     },
@@ -514,6 +522,10 @@
     {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app_v2\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chat_activity.xml",
+        "source": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\src\\main\\res\\layout\\activity_chat_activity.xml"
     },
     {
         "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
@@ -650,6 +662,10 @@
     {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_item.xml",
+        "source": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\src\\main\\res\\layout\\chat_item.xml"
     },
     {
         "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",

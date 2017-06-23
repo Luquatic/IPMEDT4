@@ -16,12 +16,12 @@
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
-        "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
@@ -40,20 +40,24 @@
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "C:\\Users\\Bram\\Desktop\\aid_app_v2\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "C:\\Users\\Bram\\.android\\build-cache\\29a0fdd2492ef89e92d683be18889011726addd7\\output\\res\\color\\design_error.xml"
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\095861811597d02b5994c3b649dd6cb5036a66c8\\output\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app_v2\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\Bram\\Desktop\\aid_app_v2\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "merged": "C:\\Users\\Bram\\Desktop\\aid_app_v2\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\29a0fdd2492ef89e92d683be18889011726addd7\\output\\res\\color\\design_error.xml"
     },
     {
         "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bram\\Desktop\\aid_app_v2\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
@@ -100,6 +104,10 @@
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\095861811597d02b5994c3b649dd6cb5036a66c8\\output\\res\\color\\common_plus_signin_btn_text_light.xml"
+    },
+    {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\abc_tint_switch_thumb.xml"
     },
@@ -136,6 +144,10 @@
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\095861811597d02b5994c3b649dd6cb5036a66c8\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
@@ -150,6 +162,10 @@
     {
         "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
         "source": "C:\\Users\\Bram\\.android\\build-cache\\6cc59613a758c8cc7fb075fef14c5ed6b9959733\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bram\\Documents\\Git\\IPMEDT4\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Bram\\.android\\build-cache\\095861811597d02b5994c3b649dd6cb5036a66c8\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\Bram\\Desktop\\aid_app\\Aid\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
