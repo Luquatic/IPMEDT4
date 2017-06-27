@@ -18,4 +18,10 @@ class VakkenController extends Controller
     public function periode($jaar, $periode) {
         return Vak::where('jaar', $jaar)->where('periode', $periode)->get();
     }
+
+    public function store(){
+
+
+        return 'gelukt';
+    }
 }
