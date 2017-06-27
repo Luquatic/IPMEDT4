@@ -16,4 +16,8 @@ class Vak extends Model
 
     }
 
+    public function setIdAttribute($value) {
+
+    }
+
 }
