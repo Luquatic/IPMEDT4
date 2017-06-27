@@ -24,15 +24,12 @@ class VakkenController extends Controller
 
         $vak->jaar = 2;
         $vak->periode = 3;
-        $vak->naam = "test module";
+        $vak->naam = "test 2222";
         $vak->ec = 3;
         $vak->gehaald = 0;
 
-        if($vak->save()){
-            return $vak;
-        }
+        return $vak = Vak::where("naam","=","test module")->get();
 
-        return "er is iets misgegaan";
 
 
     }
