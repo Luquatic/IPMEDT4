@@ -28,8 +28,16 @@ class VakkenController extends Controller
         $vak->ec = 3;
         $vak->gehaald = 0;
 
-        return $vak = Vak::where("naam","=","test module")->get();
+        $vak = Vak::where("naam","=","test module")->get();
 
+        $vak->jaar = 1000;
+
+        $vak->gehaald = 1;
+
+        $vak->save();
+
+
+        return Vak::where("naam","=","test module")->get();
 
 
     }
