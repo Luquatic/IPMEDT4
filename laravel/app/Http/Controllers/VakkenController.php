@@ -20,8 +20,20 @@ class VakkenController extends Controller
     }
 
     public function store(){
+        $vak = new Vak();
+
+        $vak->jaar = 2;
+        $vak->periode = 3;
+        $vak->naam = "test module";
+        $vak->ec = 3;
+        $vak->gehaald = 0;
+
+        if($vak->save()){
+            return $vak;
+        }
+
+        return "er is iets misgegaan";
 
 
-        return 'gelukt';
     }
 }
