@@ -32,7 +32,7 @@ class VakkenController extends Controller
 //
 //        return $vak;
 
-        $vak = Vak::where("naam","=","test module")->first();
+        $vak = Vak::where('naam','test module')->first();
 
         $vak->jaar = 1000;
 
@@ -41,7 +41,7 @@ class VakkenController extends Controller
         $vak->save();
 
 
-        return Vak::where("naam","=","test module")->get();
+        return Vak::where('naam','test module')->get();
 
 
     }
