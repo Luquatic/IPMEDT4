@@ -17,7 +17,7 @@ class CreateVakkenTable extends Migration
             $table->increments('id');
             $table->integer('jaar');
             $table->integer('periode');
-            $table->string('naam')->primary();
+            $table->string('naam')->unique();
             $table->integer('ec');
             $table->boolean('gehaald');
         });
