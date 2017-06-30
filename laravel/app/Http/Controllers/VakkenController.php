@@ -24,20 +24,22 @@ class VakkenController extends Controller
 
         $vak->jaar = 2;
         $vak->periode = 3;
-        $vak->naam = "test 2222";
+        $vak->naam = "test module";
         $vak->ec = 3;
         $vak->gehaald = 0;
 
-        $vak = Vak::where("naam","=","test module")->first();
+        return $vak->save();
 
-        $vak->jaar = 1000;
-
-        $vak->gehaald = 1;
-
-        $vak->save();
-
-
-        return Vak::where("naam","=","test module")->get();
+//        $vak = Vak::where("naam","=","test module")->first();
+//
+//        $vak->jaar = 1000;
+//
+//        $vak->gehaald = 1;
+//
+//
+//
+//
+//        return Vak::where("naam","=","test module")->get();
 
 
     }
