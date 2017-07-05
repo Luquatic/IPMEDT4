@@ -18,8 +18,7 @@ class loginController extends Controller
             ]);
         }
 
-        $voornaam = 'klant_id';
-        return redirect('/home',compact($voornaam));
+        return redirect('/home');
     }
 
     public function destroy() {
