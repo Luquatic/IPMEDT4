@@ -18,7 +18,8 @@ class loginController extends Controller
             ]);
         }
 
-        return redirect('/home');
+        $voornaam = "Jessey";
+        return redirect('/home',compact('voornaam'));
     }
 
     public function destroy() {
