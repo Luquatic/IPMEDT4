@@ -19,26 +19,23 @@ class VakkenController extends Controller
         return Vak::where('jaar', $jaar)->where('periode', $periode)->get();
     }
 
-    public function store(){
-        $vak = new Vak();
+    public function gehaald($naam){
+//        $vak = new Vak();
+//
+//        $vak->jaar = 2;
+//        $vak->periode = 3;
+//        $vak->naam = "test 2222";
+//        $vak->ec = 3;
+//        $vak->gehaald = 0;
 
-        $vak->jaar = 2;
-        $vak->periode = 3;
-        $vak->naam = "test 2222";
-        $vak->ec = 3;
-        $vak->gehaald = 0;
+        $vak = Vak::where('naam', $naam)->first();
 
-        $vak = Vak::where("naam","=","test module")->first();
+        if($vak->gehaald == 0) {
+            $vak->gehaald = 1;
+        } else {
+            $vak->gehaald = 0;
+        }
 
-        $vak->jaar = 1000;
-
-        $vak->gehaald = 1;
-
-        $vak->save();
-
-
-        return Vak::where("naam","=","test module")->get();
-
-
+        return $vak->save();
     }
 }

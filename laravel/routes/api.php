@@ -21,4 +21,4 @@ Route::get('/medtgrades','VakkenController@create');
 Route::get('/medtgrades/jaar/{jaar}', 'VakkenController@jaar');
 Route::get('/medtgrades/jaar/{jaar}/periode/{periode}', 'VakkenController@periode');
 
-Route::post('/medtgrades', 'VakkenController@store');
+Route::post('/medtgrades/update/{naam}', 'VakkenController@gehaald');
