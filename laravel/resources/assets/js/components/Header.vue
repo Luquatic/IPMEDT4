@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Drawer from '../../../../../../../../Users/Luquatic/Google Drive/HSLeiden/1617/IPMEDT4/Webapp/Kasper dit is de nieuwste/components/Process-Components/Drawer.vue'
+import Drawer from './Process-Components/Drawer.vue'
 
 export default{
   data: function () {
