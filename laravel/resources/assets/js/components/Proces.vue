@@ -4,7 +4,7 @@
 
     <!-- Item 1 : Aankomst-->
     <q-collapsible icon="local_hospital" label="Aankomst ziekenhuis" class="voldaan">
-      <img src="../assets/lumc.jpg" class="responsive">
+      <img src="../../../../../../../../Users/Luquatic/Google%20Drive/HSLeiden/1617/IPMEDT4/Webapp/Kasper%20dit%20is%20de%20nieuwste/assets/lumc.jpg" class="responsive">
       <hr>
       <div>
         Welkom bij het LUMC!
@@ -37,7 +37,7 @@
       Tijdens het maken van de foto word er duidelijk wat
       voor soort breuk je hebt.
       <hr>
-      <img src="../assets/botbreuken.jpg" class="responsive">
+      <img src="../../../../../../../../Users/Luquatic/Google%20Drive/HSLeiden/1617/IPMEDT4/Webapp/Kasper%20dit%20is%20de%20nieuwste/assets/botbreuken.jpg" class="responsive">
       <hr>
       <div>
         Als er duidelijk is wat voor beenbreuk je hebt krijg je
