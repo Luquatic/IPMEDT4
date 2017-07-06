@@ -11,13 +11,16 @@
 <script>
   /* eslint-disable */
   import bus from '../../bus'
+  import Modal from './Modal.vue'
   import ProcesHeader from './ProcesHeader.vue'
   import ProcesContent from './ProcesContent.vue'
   import Procesbar from './Procesbar.vue'
 
+  const test = '';
 
   export default{
     components: {
+      'app-modal':Modal,
       'app-proces-header': ProcesHeader,
       'app-proces-content': ProcesContent,
       'app-proces-bar': Procesbar
@@ -35,7 +38,7 @@
             completed: false,
             time:'11:00'},
           {content: 2,
-            title: "Foto's maken",
+            title: "Radiologie",
             completed: false,
             time: '12:30'},
           {content: 3,
@@ -49,7 +52,7 @@
           {content: 5,
             title: 'Vervolg afspraak',
             completed: false,
-            time:'04-20-2018 '}
+            time:''}
         ]
       }
     },
@@ -57,6 +60,16 @@
       bus.$on('IncrementId', () => {
         this.currentId++
       })
+    },
+    watch: {
+      currentId: function (val) {
+        if (val === 4 || val === 5){
+          history.pushState(null, null, 'home')
+        }
+        else {
+          history.pushState(null, null, this.headerItem[val].title)
+        }
+      }
     }
   }
 </script>

@@ -1,9 +1,10 @@
 <template>
   <div class="item-delimiter bar">
-    <h5>De volgende stap is : {{this.items[currentId].title}}</h5>
-    <p>
-      <q-progress :percentage="progress" class="stripe animate" style="height: 45px;" ></q-progress>
-    </p>
+    <h5><strong>De volgende stap is : {{this.items[currentId].title}}</strong></h5>
+      <div>
+        <div class="percentage"><strong>{{this.progress}} %</strong></div>
+        <q-progress :percentage="progress" class="stripe animate" style="height: 25px;"></q-progress>
+      </div>
   </div>
 
 </template>
@@ -15,12 +16,12 @@ export default{
   data: function () {
     return {
       progress: 0,
-      completed: 0
+      completed: 0,
+      test: 'Hallo'
     }
   },
   watch: {
     currentId: function (val) {
-      console.log(this.items.length)
       this.progress += (100 / (this.items.length - 1))
     }
   }
@@ -33,6 +34,13 @@ export default{
     padding-right:20px;
   }
   h5{
-    font-size: 24px;
+    font-size: 16px;
+  }
+  .percentage{
+    padding: 3px;
+    margin-left: 6px;
+    color: white;
+    z-index: 2;
+    position: absolute;
   }
 </style>
