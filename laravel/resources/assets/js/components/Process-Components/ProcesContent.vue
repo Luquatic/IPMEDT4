@@ -20,9 +20,13 @@
         Afhankelijk van uw klacht of letsel wordt u verwezen naar de wachtkamer of wordt u naar een behandelkamer gebracht. De volgorde van de behandeling van patiënten wordt met name bepaald door de urgentie van de klachten en niet door de volgorde van binnenkomst. Dit bepaalt dus ook uw wachttijd.
         Patiënten die met de ambulance worden binnengebracht, komen via een andere ingang op de EHBO en kunnen voor langere wachttijden zorgen. <br><br>
         Andere factoren die de wachttijd kunnen beïnvloeden, zijn:
+        <br>
         •	de beschikbaarheid van de behandelkamer die voor uw behandeling nodig is;
+        <br>
         •	de beschikbaarheid van onderzoeksafdelingen (b.v. röntgen);
+        <br>
         •	de uitslagen van bloedonderzoeken duren minimaal een uur;
+        <br>
         •	het advies vragen aan een andere arts. Deze werkt vaak op een andere afdeling en is daardoor niet altijd direct beschikbaar.
         <br><br> Als er vast is gesteld dat je been gebroken is dan wordt u doorverwezen naar de Radiologie.
       </div>
