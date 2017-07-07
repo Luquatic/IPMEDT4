@@ -27649,6 +27649,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -69241,7 +69245,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._v("\n      Welkom bij het LUMC! "), _c('br'), _c('br'), _vm._v("U heeft zich net aangemeld bij de balie en heeft uw gegevens ontvangen. "), _c('br'), _c('br'), _vm._v("Deze applicatie begeleid u door het proces van vandaag. Bekijk de volgende processen die u gaat doorlopen en ondervind meer informatie hierover. "), _c('br'), _vm._v("Bent u klaar met een stap in het proces dan kunt u deze afronden en aan de gang met de volgende stap. "), _c('br'), _c('br'), _vm._v("Wilt u weten waar u heen moet in het ziekenhuis dan kunt u de plattegrond openen en hier zien waar deze afdeling zich bevind.\n    ")])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n      Afhankelijk van uw klacht of letsel wordt u verwezen naar de wachtkamer of wordt u naar een behandelkamer gebracht. De volgorde van de behandeling van patiënten wordt met name bepaald door de urgentie van de klachten en niet door de volgorde van binnenkomst. Dit bepaalt dus ook uw wachttijd.\n      Patiënten die met de ambulance worden binnengebracht, komen via een andere ingang op de EHBO en kunnen voor langere wachttijden zorgen. "), _c('br'), _c('br'), _vm._v("\n      Andere factoren die de wachttijd kunnen beïnvloeden, zijn:\n      •\tde beschikbaarheid van de behandelkamer die voor uw behandeling nodig is;\n      •\tde beschikbaarheid van onderzoeksafdelingen (b.v. röntgen);\n      •\tde uitslagen van bloedonderzoeken duren minimaal een uur;\n      •\thet advies vragen aan een andere arts. Deze werkt vaak op een andere afdeling en is daardoor niet altijd direct beschikbaar.\n      "), _c('br'), _c('br'), _vm._v(" Als er vast is gesteld dat je been gebroken is dan wordt u doorverwezen naar de Radiologie.\n    ")])
+  return _c('div', [_vm._v("\n      Afhankelijk van uw klacht of letsel wordt u verwezen naar de wachtkamer of wordt u naar een behandelkamer gebracht. De volgorde van de behandeling van patiënten wordt met name bepaald door de urgentie van de klachten en niet door de volgorde van binnenkomst. Dit bepaalt dus ook uw wachttijd.\n      Patiënten die met de ambulance worden binnengebracht, komen via een andere ingang op de EHBO en kunnen voor langere wachttijden zorgen. "), _c('br'), _c('br'), _vm._v("\n      Andere factoren die de wachttijd kunnen beïnvloeden, zijn:\n      "), _c('br'), _vm._v("\n      •\tde beschikbaarheid van de behandelkamer die voor uw behandeling nodig is;\n      "), _c('br'), _vm._v("\n      •\tde beschikbaarheid van onderzoeksafdelingen (b.v. röntgen);\n      "), _c('br'), _vm._v("\n      •\tde uitslagen van bloedonderzoeken duren minimaal een uur;\n      "), _c('br'), _vm._v("\n      •\thet advies vragen aan een andere arts. Deze werkt vaak op een andere afdeling en is daardoor niet altijd direct beschikbaar.\n      "), _c('br'), _c('br'), _vm._v(" Als er vast is gesteld dat je been gebroken is dan wordt u doorverwezen naar de Radiologie.\n    ")])
 }]}
 module.exports.render._withStripped = true
 if (false) {
