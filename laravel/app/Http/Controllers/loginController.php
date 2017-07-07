@@ -22,11 +22,11 @@ class loginController extends Controller
     }
 
     protected function authenticated(Request $request, $user){
-        if($user->klant_id == 0){
-            return redirect('/register'); //redirect to admin panel
+        if($user->klant_id === 0){
+            return redirect('/register'); //redirect to register panel
         }
 
-        return redirect('/home'); //redirect to standard user homepage
+        return redirect('/home'); //redirect to homepage
     }
 
     public function destroy() {
