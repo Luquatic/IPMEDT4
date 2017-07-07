@@ -19,8 +19,8 @@ class RegistrationController extends Controller
         //Validate the form
         $this->validate(request(), [
             'klant_id' => 'required|integer|unique:klanten',
-            'voornaam' => 'required|string|regex:^([a-z]+[,.]?[ ]?|[a-z]+[\'-]?)+$|max:255',
-            'achternaam' => 'required|string|regex:^([a-z]+[,.]?[ ]?|[a-z]+[\'-]?)+$|max:255',
+            'voornaam' => 'required|string|regex:^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$|max:255',
+            'achternaam' => 'required|string|regex:^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$|max:255',
             'password' => 'required|string|min:4|'
         ]);
 
