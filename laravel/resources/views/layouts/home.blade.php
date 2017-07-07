@@ -22,8 +22,7 @@
 <![endif]-->
 
 <div id="app">
-    <auth user="{{ Auth::user()->voornaam }}"></auth>
-    <app></app>
+    <app><auth user="{{ Auth::user()->voornaam }}"></auth></app>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
