@@ -19,7 +19,7 @@ class CreateKlantenTable extends Migration
             $table->string('voornaam');
             $table->string('achternaam');
             $table->string('password');
-            $table->integer('stap');
+            $table->integer('stap')->default(0);
             $table->rememberToken();
         });
     }
