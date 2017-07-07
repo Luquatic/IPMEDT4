@@ -21,12 +21,12 @@ class loginController extends Controller
         return redirect('/home');
     }
 
-    protected function authenticated($request, $user){
-        if($user->klant_id === 0){
-            return redirect()->intended('/register'); //redirect to admin panel
+    protected function authenticated(Request $request, $user){
+        if($user->klant_id == 0){
+            return redirect('/register'); //redirect to admin panel
         }
 
-        return redirect()->intended('/home'); //redirect to standard user homepage
+        return redirect('/home'); //redirect to standard user homepage
     }
 
     public function destroy() {
