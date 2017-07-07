@@ -22,7 +22,7 @@ class loginController extends Controller
     }
 
     protected function authenticated($request, $user){
-        if($user->klant_id === 'servicedesk'){
+        if($user->klant_id === 0){
             return redirect()->intended('/register'); //redirect to admin panel
         }
 
