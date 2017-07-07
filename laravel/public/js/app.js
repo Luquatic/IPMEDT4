@@ -27645,6 +27645,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -69193,7 +69197,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": __webpack_require__(182)
     }
-  })])] : _vm._e()], 2) : _vm._e(), _vm._v(" "), (_vm.items.content == 1) ? _c('div', [_c('div', [_vm._v("\n      Bij de EHBO wordt er onderzocht wat er aan de hand is met uw been.\n      Als het duidelijk is dat er wat aan de hand is moeten\n      er foto's gemaakt worden.\n    ")]), _vm._v(" "), (_vm.currentId == 1) ? [_c('hr'), _vm._v(" "), _c('button', {
+  })])] : _vm._e()], 2) : _vm._e(), _vm._v(" "), (_vm.items.content == 1) ? _c('div', [_vm._m(1), _vm._v(" "), (_vm.currentId == 1) ? [_c('hr'), _vm._v(" "), _c('button', {
     staticClass: "primary",
     on: {
       "click": _vm.setDone
@@ -69203,12 +69207,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": __webpack_require__(179)
     }
-  })])] : _vm._e()], 2) : _vm._e(), _vm._v(" "), (_vm.items.content == 2) ? _c('div', [_vm._v("\n    Je been kan op verschillende manieren gebroken zijn.\n    Tijdens het maken van de foto word er duidelijk wat\n    voor soort breuk je hebt. Binnen de sectie Radiologie worden er röntgenfoto's gemaakt van de breuk.\n    "), _c('br'), _c('br'), _vm._v("\n    Zodra u binnenkomt wordt er aan u gevraagd om plaats te nemen bij de installatie waar de foto's worden gemaakt.\n    "), _c('br'), _c('br'), _vm._v("\n    Vervolgens gaat de dokter of assistent de foto's daadwerkelijk maken en worden deze geëvalueerd.\n    "), _c('img', {
+  })])] : _vm._e()], 2) : _vm._e(), _vm._v(" "), (_vm.items.content == 2) ? _c('div', [_vm._v("\n    Uw been kan op verschillende manieren gebroken zijn.\n    Tijdens het maken van de foto word er duidelijk wat\n    voor soort breuk u hebt. Binnen de sectie Radiologie worden er röntgenfoto's gemaakt van de breuk.\n    "), _c('br'), _c('br'), _vm._v("\n    Zodra u binnenkomt wordt er aan u gevraagd om plaats te nemen bij de installatie waar de foto's worden gemaakt.\n    "), _c('br'), _c('br'), _vm._v("\n    Vervolgens gaat de dokter of assistent de foto's daadwerkelijk maken en worden deze geëvalueerd.\n    "), _c('img', {
     staticClass: "responsive",
     attrs: {
       "src": __webpack_require__(177)
     }
-  }), _vm._v(" "), _c('div', [_vm._v("\n      Als er duidelijk is wat voor beenbreuk je hebt krijg je\n      hier informatie over en kan jou been gegipst worden.\n    ")]), _vm._v(" "), (_vm.currentId == 2) ? [_c('hr'), _vm._v(" "), _c('button', {
+  }), _vm._v(" "), _c('div', [_vm._v("\n      Als er duidelijk is wat voor beenbreuk u hebt krijgt u        hier informatie over en kan uw been gegipst worden.\n    ")]), _vm._v(" "), (_vm.currentId == 2) ? [_c('hr'), _vm._v(" "), _c('button', {
     staticClass: "primary",
     on: {
       "click": _vm.setDone
@@ -69218,7 +69222,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": __webpack_require__(180)
     }
-  })])] : _vm._e()], 2) : _vm._e(), _vm._v(" "), (_vm.items.content == 3) ? _c('div', [_vm._v("\n    Nu je bent aangekomen bij deze stap, gaat je been worden gegipst. Tijdens het gipsen wordt gips\n    aangebracht om je gebroken been. Dit is het eerste gips. Na een tijdje wordt het eerste gips er af gehaald\n    en wordt weer een foto gemaakt en wordt hierna het tweede aangebracht. Gipsen zelf doet vaak geen tot weinig pijn en\n    duurt ongeveer 15 tot 20 minuten.\n    "), _c('br'), _c('br'), _vm._v("\n    Wist je dat gips ongeveer drie tot vijf weken blijft zitten? Meestal is dan je breuk weer genezen.\n    "), _c('br'), _c('br'), _vm._v("\n    Hieronder is een kort filmpje te zien over het gipsen van een lichaamsdeel.\n    "), _c('hr'), _vm._v(" "), _c('app-video'), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', [_vm._v("\n      Als het gipsen van het been is voldaan dan moet er nog een vervolg\n      afspraak geplant worden.\n    ")]), _vm._v(" "), (_vm.currentId == 3) ? [_c('button', {
+  })])] : _vm._e()], 2) : _vm._e(), _vm._v(" "), (_vm.items.content == 3) ? _c('div', [_vm._v("\n    Nu u bent aangekomen bij deze stap, gaat uw been worden gegipst. Tijdens het gipsen wordt gips\n    aangebracht om uw gebroken been. Dit is het eerste gips. Na een tijdje wordt het eerste gips er af gehaald\n    en wordt weer een foto gemaakt en wordt hierna het tweede aangebracht. Gipsen zelf doet vaak geen tot weinig pijn en\n    duurt ongeveer 15 tot 20 minuten.\n    "), _c('br'), _c('br'), _vm._v("\n    Wist u dat gips ongeveer drie tot vijf weken blijft zitten? Meestal is dan uw breuk weer genezen.\n    "), _c('br'), _c('br'), _vm._v("\n    Hieronder is een kort filmpje te zien over het gipsen van een lichaamsdeel.\n    "), _c('hr'), _vm._v(" "), _c('app-video'), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', [_vm._v("\n      Als het gipsen van het been is voldaan dan moet er nog een vervolg\n      afspraak geplant worden.\n    ")]), _vm._v(" "), (_vm.currentId == 3) ? [_c('button', {
     staticClass: "primary",
     on: {
       "click": _vm.setDone
@@ -69228,14 +69232,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": __webpack_require__(181)
     }
-  })])] : _vm._e()], 2) : _vm._e(), _vm._v(" "), (_vm.items.content == 4) ? _c('div', [_c('div', [_vm._v("\n      Als de vervolg afspraak is gemaakt dan moet je deze bevestigen bij de balie.\n    ")]), _vm._v(" "), (_vm.currentId == 4) ? _c('button', {
+  })])] : _vm._e()], 2) : _vm._e(), _vm._v(" "), (_vm.items.content == 4) ? _c('div', [_c('div', [_vm._v("\n      Bij de receptie maakt u een vervolg afspraak voor controle na de eerste week.\n    ")]), _vm._v(" "), (_vm.currentId == 4) ? _c('button', {
     staticClass: "full-width primary",
     on: {
       "click": _vm.setDone
     }
-  }, [_vm._v("Rond stap af")]) : _vm._e()]) : _vm._e(), _vm._v(" "), (_vm.items.content == 5) ? _c('div', [_vm._v("\n    Tijdens de vervolg afspraak word er gekeken naar jou been. En\n    of het gips er al af kan.\n  ")]) : _vm._e()])
+  }, [_vm._v("Rond stap af")]) : _vm._e()]) : _vm._e(), _vm._v(" "), (_vm.items.content == 5) ? _c('div', [_vm._v("\n    Tijdens het vervolg afspraak word er gekeken naar jou been en word het gips vervangen voor loop gips.\n  ")]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n      Welkom bij het LUMC! U heeft zich net aangemeld bij de balie en heeft uw gegevens ontvangen en onze applicatie gedownload. Deze applicatie begeleid u door het proces van vandaag. Bekijk de volgende processen die u gaat doorlopen en ondervind meer informatie hierover. Ben je klaar met een stap dan kan je deze afronden en aan de gang met de volgende stap. "), _c('br'), _vm._v("Wil je weten waar je heen moet in het ziekenhuis dan kan je de plattegrond openen en hier zien waar deze afdeling zich bevind.\n    ")])
+  return _c('div', [_vm._v("\n      Welkom bij het LUMC! U heeft zich net aangemeld bij de balie en heeft uw gegevens ontvangen en onze applicatie gedownload. Deze applicatie begeleid u door het proces van vandaag. Bekijk de volgende processen die u gaat doorlopen en ondervind meer informatie hierover. Bent u klaar met een stap in het proces dan kunt u deze afronden en aan de gang met de volgende stap. "), _c('br'), _vm._v("Wilt u weten waar u heen moet in het ziekenhuis dan kunt u de plattegrond openen en hier zien waar deze afdeling zich bevind.\n    ")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_vm._v("\n      Afhankelijk van uw klacht of letsel wordt u verwezen naar de wachtkamer of wordt u naar een behandelkamer gebracht. De volgorde van de behandeling van patiënten wordt met name bepaald door de urgentie van de klachten en niet door de volgorde van binnenkomst. Dit bepaalt dus ook uw wachttijd.\n      Patiënten die met de ambulance worden binnengebracht, komen via een andere ingang op de EHBO en kunnen voor langere wachttijden zorgen. "), _c('br'), _c('br'), _vm._v("\n      Andere factoren die de wachttijd kunnen beïnvloeden, zijn:\n      •\tde beschikbaarheid van de behandelkamer die voor uw behandeling nodig is;\n      •\tde beschikbaarheid van onderzoeksafdelingen (b.v. röntgen);\n      •\tde uitslagen van bloedonderzoeken duren minimaal een uur;\n      •\thet advies vragen aan een andere arts. Deze werkt vaak op een andere afdeling en is daardoor niet altijd direct beschikbaar.\n      "), _c('br'), _c('br'), _vm._v(" Als er vast is gesteld dat je been gebroken is dan wordt u doorverwezen naar de Radiologie.\n    ")])
 }]}
 module.exports.render._withStripped = true
 if (false) {
