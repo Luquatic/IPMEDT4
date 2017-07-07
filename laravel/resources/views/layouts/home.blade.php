@@ -22,7 +22,7 @@
 <![endif]-->
 
 <div id="app">
-    <auth user={{ Auth::user()->voornaam }}></auth>
+    <auth user="{{ Auth::user()->voornaam }}"></auth>
     <app></app>
 </div>
 

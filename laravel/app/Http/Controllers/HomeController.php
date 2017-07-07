@@ -14,4 +14,9 @@ class HomeController extends Controller
     public function create() {
         return view('layouts.home');
     }
+
+    public function getUser() {
+        $user = Auth::user();
+        return $user->voornaam;
+    }
 }
