@@ -6,15 +6,15 @@
 </template>
 
 <script>
-  import Header from './Header.vue'
-  import ProcesList from './Process-Components/ProcesList.vue'
+    import Header from './Header.vue'
+    import ProcesList from './Process-Components/ProcesList.vue'
 
-  export default{
-    components: {
-      'app-header': Header,
-      'app-proces-list': ProcesList
+    export default{
+        components: {
+            'app-header': Header,
+            'app-proces-list': ProcesList
+        }
     }
-  }
 </script>
 
 <style>

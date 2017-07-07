@@ -10,27 +10,27 @@
 </template>
 
 <script>
-import Drawer from './Process-Components/Drawer.vue'
+    import Drawer from './Process-Components/Drawer.vue'
 
-export default{
-  data: function () {
-    return {
-      name: 'Patient'
+    export default{
+        data: function () {
+            return {
+                name: 'Patient'
+            }
+        },
+        components: {
+            'app-drawer': Drawer
+        }
     }
-  },
-  components: {
-    'app-drawer': Drawer
-  }
-}
 
 </script>
 
 <style>
-.toolbar.secondary{
-  background: #6ccbf0;
-}
-#logo{
-  width: 40px;
-  height: 40px;
-}
+  .toolbar.secondary{
+    background: #6ccbf0;
+  }
+  #logo{
+    width: 40px;
+    height: 40px;
+  }
 </style>
