@@ -5,7 +5,7 @@
       <img src="../../assets/lumc.jpg" class="responsive">
       <hr>
       <div>
-        test Welkom bij het LUMC! U heeft zich net aangemeld bij de balie en heeft uw gegevens ontvangen en onze applicatie gedownload. Deze applicatie begeleid u door het proces van vandaag. Bekijk de volgende processen die u gaat doorlopen en ondervind meer informatie hierover. Ben je klaar met een stap dan kan je deze afronden en aan de gang met de volgende stap. <br>Wil je weten waar je heen moet in het ziekenhuis dan kan je de plattegrond openen en hier zien waar deze afdeling zich bevind.
+        Welkom bij het LUMC! U heeft zich net aangemeld bij de balie en heeft uw gegevens ontvangen en onze applicatie gedownload. Deze applicatie begeleid u door het proces van vandaag. Bekijk de volgende processen die u gaat doorlopen en ondervind meer informatie hierover. Ben je klaar met een stap dan kan je deze afronden en aan de gang met de volgende stap. <br>Wil je weten waar je heen moet in het ziekenhuis dan kan je de plattegrond openen en hier zien waar deze afdeling zich bevind.
       </div>
       <template v-if="currentId == 0">
         <hr>

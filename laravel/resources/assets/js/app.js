@@ -8,7 +8,6 @@ require('./bootstrap');
 require('quasar-framework/dist/quasar.mat.css');
 
 import Quasar from 'quasar-framework';
-import router from './router';
 
 window.Vue = require('vue');
 
