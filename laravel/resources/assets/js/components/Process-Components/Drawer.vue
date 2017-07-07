@@ -11,7 +11,7 @@
             Overzicht
           </div>
           <hr>
-          <q-drawer-link class="gray" icon="exit_to_app" to="/login">Logout</q-drawer-link>
+          <q-drawer-link class="gray" icon="exit_to_app" href="aid.jesseyfransen.com/logout">Logout</q-drawer-link>
         </div>
       </q-drawer>
     </div>

@@ -69127,7 +69127,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "gray",
     attrs: {
       "icon": "exit_to_app",
-      "to": "/login"
+      "href": "aid.jesseyfransen.com/logout"
     }
   }, [_vm._v("Logout")])], 1)])], 1)
 },staticRenderFns: []}
