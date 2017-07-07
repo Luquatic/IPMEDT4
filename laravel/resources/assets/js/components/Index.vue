@@ -7,7 +7,7 @@
 
 <script>
   import Header from './Header.vue'
-  import ProcesList from '../../../../../../../../Users/Luquatic/Google Drive/HSLeiden/1617/IPMEDT4/Webapp/Kasper dit is de nieuwste/components/Process-Components/ProcesList.vue'
+  import ProcesList from './Process-Components/ProcesList.vue'
 
   export default{
     components: {
