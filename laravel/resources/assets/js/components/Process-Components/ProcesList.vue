@@ -30,7 +30,7 @@
         currentId: 0,
         headerItem: [
           {content: 0,
-            title: 'Aankomst ziekenhuis',
+            title: 'Aankomst',
             completed: false,
             time:'9:30'},
           {content: 1,
