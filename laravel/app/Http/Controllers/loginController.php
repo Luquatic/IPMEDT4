@@ -28,6 +28,11 @@ class loginController extends Controller
             ]);
         }
 
+        $user = Auth::user();
+        var_dump($user);
+
+
+
         return redirect('/home');
     }
 
