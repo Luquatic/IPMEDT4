@@ -15,7 +15,8 @@
     export default{
         components: {
             'app-drawer': Drawer
-        }
+        },
+        props: ['user']
     }
 
 </script>
