@@ -27491,9 +27491,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {};
-  }
+    data: function data() {
+        return {};
+    },
+
+    methods: {
+        logout: function logout(event) {
+            location.href = 'logout';
+        }
+    }
 });
 
 /***/ }),
@@ -30341,7 +30347,7 @@ exports.push([module.i, "\n.styling[data-v-487fc75b]{\n  height: 100px;\n  width
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
-exports.push([module.i, "\n.list-header[data-v-5318879b]{\n  margin: 15px;\n  color:black;\n}\n.gray[data-v-5318879b]{\n  color: gray;\n}\n", ""]);
+exports.push([module.i, "\n.list-header[data-v-5318879b]{\n    margin: 15px;\n    color:black;\n}\n.gray[data-v-5318879b]{\n    color: gray;\n}\n", ""]);
 
 /***/ }),
 /* 171 */
@@ -69123,13 +69129,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "list platform-delimiter"
   }, [_c('div', {
     staticClass: "list-header"
-  }, [_vm._v("\n          Overzicht\n        ")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('q-drawer-link', {
+  }, [_vm._v("\n                Overzicht\n            ")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('button', {
     staticClass: "gray",
-    attrs: {
-      "icon": "exit_to_app",
-      "to": "../logout"
+    on: {
+      "click": _vm.logout
     }
-  }, [_vm._v("Logout")])], 1)])], 1)
+  }, [_vm._v("Logout")])])])], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
