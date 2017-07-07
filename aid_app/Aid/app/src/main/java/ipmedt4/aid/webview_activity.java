@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 public class webview_activity extends AppCompatActivity {
     private String patient_name;
+    private FloatingActionButton chat_button;
     public static final String USERNAME = "user_name";
 
     @Override
@@ -50,16 +51,31 @@ public class webview_activity extends AppCompatActivity {
         // initializing webview
         final WebView webviewer = (WebView) findViewById(R.id.aid_webview);
 
-        //setting it as webview client (so it doesn't redirect to default phone browser)
-        webviewer.setWebViewClient(new WebViewClient());
+        // initializing fab
+        chat_button = (FloatingActionButton) findViewById(R.id.chat_button);
+
+        //setting it as webview client (so it doesn't redirect to default phone browser) and hide FAB on login screen
+        webviewer.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onLoadResource(WebView  view, String  url){
+                String home_url = webviewer.getUrl();
+                if (home_url.equals("http://aid.jesseyfransen.com/")) {
+                    chat_button.setVisibility(View.GONE);
+                }
+                else {
+                    chat_button.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
         // url to load in webview
         webviewer.getSettings().setJavaScriptEnabled(true);
-        webviewer.loadUrl("http://kasperdevries.nl/");
+        webviewer.loadUrl("http://aid.jesseyfransen.com/");
 
         String url =  webviewer.getUrl();;
         String afdeling =  url.substring(url.lastIndexOf("/")+1);
         Log.d("afdeling", afdeling);
+
         // allow system return button to go back one page
         webviewer.setOnKeyListener(new View.OnKeyListener()
         {
@@ -83,29 +99,34 @@ public class webview_activity extends AppCompatActivity {
             }
         });
 
-        // custom chat button
-        FloatingActionButton chat_button = (FloatingActionButton) findViewById(R.id.chat_button);
+
+
+        // go to desired chatroom if chat_button fab is pressed
         chat_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Context context = getApplicationContext();
                 Intent chatIntent = new Intent(webview_activity.this, ChatRoom.class);
-                String url =  webviewer.getUrl();;
+
+                // get afdeling and gebruiker
+                String url =  webviewer.getUrl();
                 String afdeling =  url.substring(url.lastIndexOf("/")+1);
                 String gebruiker = PreferenceManager.getDefaultSharedPreferences(context).getString("patient_name", patient_name);
-                if (afdeling.isEmpty())  {
+
+                // go to desired chatroom of chatlist
+                if (afdeling.equals("home") || afdeling.isEmpty())  {
                     startActivity(new Intent(webview_activity.this, chat_activity.class));
                 }
                 else {
-
                     chatIntent.putExtra("Afdeling", afdeling);
                     chatIntent.putExtra("Gebruiker", gebruiker);
                     startActivity(chatIntent);
 
                 }
-
             }
         });
+
     }
 
     // alertdialog that shows app information
@@ -124,7 +145,6 @@ public class webview_activity extends AppCompatActivity {
                 request_user_name();
             }
         });
-
         infobuilder.show();
     }
 
@@ -155,9 +175,6 @@ public class webview_activity extends AppCompatActivity {
 
             }
         });
-
-
-
         builder.show();
     }
 }

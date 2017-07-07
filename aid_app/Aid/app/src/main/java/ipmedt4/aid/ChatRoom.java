@@ -1,10 +1,13 @@
 package ipmedt4.aid;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
@@ -141,4 +144,28 @@ public class ChatRoom extends AppCompatActivity {
 
 
     }
+
+    // creates menu button top right corner
+    @Override
+    public boolean onCreateOptionsMenu (Menu menu) {
+        // locates .xml menu file (res\menu\main_menu.xml)
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    // menu event handler which makes user select chatroom option
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        // go to settings activity
+        if (id == R.id.chat_rooms) {
+            Intent intent = new Intent(ChatRoom.this, chat_activity.class);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }

@@ -9,6 +9,8 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -58,8 +60,6 @@ public class chat_activity extends AppCompatActivity {
         // get sharedpreferences file
         SharedPreferences settings = getSharedPreferences(USERNAME, 0);
 
-
-
         // listview for room names
         room_names = (ListView) findViewById(R.id.room_list);
 
@@ -72,7 +72,6 @@ public class chat_activity extends AppCompatActivity {
         @Override
         public void onDataChange(DataSnapshot dataSnapshot) {
             // iterate through root children
-
             Iterator i = dataSnapshot.getChildren().iterator();
             Set<String> set = new HashSet<String>();
 
@@ -80,6 +79,8 @@ public class chat_activity extends AppCompatActivity {
             while (i.hasNext()) {
                 set.add(((DataSnapshot)i.next()).getKey());
             }
+
+            // add rooms to roomlist
             roomList.clear();
             roomList.addAll(set);
             room_adapter.notifyDataSetChanged();

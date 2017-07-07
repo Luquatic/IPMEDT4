@@ -38,7 +38,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ipmedt4.aid.webview_activity" />
+        <activity
+            android:name="ipmedt4.aid.webview_activity"
+            android:configChanges="orientation|screenSize" />
         <activity
             android:name="ipmedt4.aid.chat_activity"
             android:parentActivityName="ipmedt4.aid.webview_activity" />
