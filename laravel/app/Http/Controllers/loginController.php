@@ -12,7 +12,7 @@ class loginController extends Controller
     }
 
     protected function authenticated(Request $request, $user){
-        if($user->klant_id === 0){
+        if($user->voornaam === 'Servicedesk'){
             return redirect('/register'); //redirect to register panel
         }
 

@@ -18,7 +18,7 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         if (Auth::guard($guard)->check()) {
-            if (Auth::user()->klant_id === 0) {
+            if (Auth::user()->voornaam === 'Servicedesk') {
                 return redirect('/register');
             }
 
