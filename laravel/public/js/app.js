@@ -69130,7 +69130,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "list-header"
   }, [_vm._v("\n                Overzicht\n            ")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('button', {
-    staticClass: "gray",
+    staticClass: "full-width gray",
     on: {
       "click": _vm.logout
     }

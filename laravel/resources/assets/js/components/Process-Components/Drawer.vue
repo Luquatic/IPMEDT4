@@ -11,7 +11,7 @@
                     Overzicht
                 </div>
                 <hr>
-                <button class="gray" @click="logout">Logout</button>
+                <button class="full-width gray" @click="logout">Logout</button>
             </div>
         </q-drawer>
     </div>
