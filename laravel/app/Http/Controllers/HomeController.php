@@ -20,4 +20,9 @@ class HomeController extends Controller
         $user = Auth::user();
         return $user->voornaam;
     }
+
+    public function getStap() {
+        $user = Auth::user();
+        return $user->stap;
+    }
 }

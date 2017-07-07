@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
             'voornaam' => 'Jessey',
             'achternaam' => 'Fransen',
             'password' => bcrypt('Hallo123'),
+            'stap' => 0,
         ]);
 
         DB::table('klanten')->insert([
@@ -23,6 +24,7 @@ class DatabaseSeeder extends Seeder
             'voornaam' => 'Servicedesk',
             'achternaam' => 'LUMC',
             'password' => bcrypt('servicedesk'),
+            'stap' => 0,
         ]);
 
         // Jaar 1

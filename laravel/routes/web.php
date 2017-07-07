@@ -23,3 +23,4 @@ Route::post('/register', 'RegistrationController@store');
 
 Route::get('/home', 'HomeController@create');
 Route::get('/home/user', 'HomeController@getUser');
+Route::get('/home/user/stap', 'HomeController@getStap');
