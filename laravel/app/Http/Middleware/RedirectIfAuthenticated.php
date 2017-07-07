@@ -18,6 +18,10 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         if (Auth::guard($guard)->check()) {
+            if (Auth::user()->klant_id == 0) {
+                return redirect('/register');
+            }
+
             return redirect('/home');
         }
 
