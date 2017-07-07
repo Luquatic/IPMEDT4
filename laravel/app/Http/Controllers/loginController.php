@@ -21,6 +21,14 @@ class loginController extends Controller
         return redirect('/home');
     }
 
+    protected function authenticated($request, $user){
+        if($user->klant_id === 'servicedesk'){
+            return redirect()->intended('/register'); //redirect to admin panel
+        }
+
+        return redirect()->intended('/home'); //redirect to standard user homepage
+    }
+
     public function destroy() {
         auth()->logout();
 
