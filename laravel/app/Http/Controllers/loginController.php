@@ -12,6 +12,8 @@ class loginController extends Controller
     }
 
     protected function authenticated(Request $request, $user){
+
+        var_dump($user);
         if($user->voornaam === 'Servicedesk'){
             return redirect('/register'); //redirect to register panel
         }
