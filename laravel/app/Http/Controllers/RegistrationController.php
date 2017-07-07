@@ -23,9 +23,6 @@ class RegistrationController extends Controller
         //Create and save the user
         $klant = User::create(request(['klant_id', 'voornaam', 'achternaam', 'password']));
 
-        //Sign them in
-        auth()->login($klant);
-
-        return redirect('/home');
+        return redirect('/register');
     }
 }
