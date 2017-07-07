@@ -2,7 +2,7 @@
   <div class="toolbar secondary">
     <img id="logo" src="./logo_app_2.png" alt="">
     <q-toolbar-title :padding="2">
-      Aid - Welkom {{name}}
+      Aid - Welkom {{user}}
     </q-toolbar-title>
     <app-drawer></app-drawer>
   </div>
@@ -13,11 +13,6 @@
     import Drawer from './Process-Components/Drawer.vue'
 
     export default{
-        data: function () {
-            return {
-                name: 'Patient'
-            }
-        },
         components: {
             'app-drawer': Drawer
         }

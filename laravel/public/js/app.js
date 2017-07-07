@@ -27427,11 +27427,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            name: 'Patient'
-        };
-    },
     components: {
         'app-drawer': __WEBPACK_IMPORTED_MODULE_0__Process_Components_Drawer_vue___default.a
     }
@@ -69061,7 +69056,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "padding": 2
     }
-  }, [_vm._v("\n    Aid - Welkom " + _vm._s(_vm.name) + "\n  ")]), _vm._v(" "), _c('app-drawer')], 1)
+  }, [_vm._v("\n    Aid - Welkom " + _vm._s(_vm.user) + "\n  ")]), _vm._v(" "), _c('app-drawer')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
