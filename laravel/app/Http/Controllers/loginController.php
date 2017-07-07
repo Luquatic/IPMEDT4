@@ -11,6 +11,14 @@ class loginController extends Controller
         return view('auth.login');
     }
 
+    protected function authenticated(Request $request, $user){
+        if($user->klant_id === 0){
+            return redirect('/register'); //redirect to register panel
+        }
+
+        return redirect('/home'); //redirect to homepage
+    }
+
     public function store() {
         if (! auth()->attempt(request(['klant_id', 'password']))) {
             return back()->withErrors([
@@ -21,13 +29,6 @@ class loginController extends Controller
         return redirect('/home');
     }
 
-    protected function authenticated(Request $request, $user){
-        if($user->klant_id === 0){
-            return redirect('/register'); //redirect to register panel
-        }
-
-        return redirect('/home'); //redirect to homepage
-    }
 
     public function destroy() {
         auth()->logout();
