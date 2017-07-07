@@ -12,14 +12,14 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('klanten')->insert([
-            'klant_id' => 0001,
+            'klant_id' => 1,
             'voornaam' => 'Jessey',
             'achternaam' => 'Fransen',
             'password' => bcrypt('Hallo123'),
         ]);
 
         DB::table('klanten')->insert([
-            'klant_id' => 0000,
+            'klant_id' => 0,
             'voornaam' => 'Servicedesk',
             'achternaam' => 'LUMC',
             'password' => bcrypt('servicedesk'),
