@@ -23,13 +23,10 @@ class loginController extends Controller
     }
 
     public function store() {
-        if (! auth()->attempt(request(['klant_id', 'password']))) {
-            return back()->withErrors([
-                'message' => 'Verkeerde klantnummer en/of code'
-            ]);
-        }
+        auth()->attempt(request(['klant_id', 'password']));
 
         $user = Auth::user();
+
         var_dump($user);
 
 
