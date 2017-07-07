@@ -27,7 +27,10 @@ class loginController extends Controller
 
         $user = Auth::user();
 
-        var_dump($user);
+        if($user->klant_id == 0)
+        {
+            return redirect('/register');
+        }
 
 
 
