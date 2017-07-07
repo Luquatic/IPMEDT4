@@ -7,6 +7,10 @@ use App\User;
 
 class RegistrationController extends Controller
 {
+    public function __construct() {
+        $this->middleware('auth');
+    }
+
     public function create() {
         return view('auth.register');
     }

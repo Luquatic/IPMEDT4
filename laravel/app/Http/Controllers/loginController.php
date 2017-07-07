@@ -13,7 +13,11 @@ class loginController extends Controller
     }
 
     public function store() {
-        auth()->attempt(request(['klant_id', 'password']));
+        if (! auth()->attempt(request(['klant_id', 'password']))) {
+            return back()->withErrors([
+                'message' => 'Verkeerde klantnummer en/of code'
+            ]);
+        }
 
         $user = Auth::user();
         if($user->klant_id == 0) {
