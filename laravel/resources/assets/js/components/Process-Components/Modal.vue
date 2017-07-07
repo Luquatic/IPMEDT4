@@ -5,7 +5,7 @@
       @click="$refs[modal.ref].open()">Plattegrond</button>
     <q-modal ref="minimizedModal" class="minimized" :content-css="{padding: '20px'}">
         <h5>Plattegrond van het ziekenhuis</h5>
-          <slot></slot>
+        <slot></slot>
         <button class="full-width back_button" @click="$refs.minimizedModal.close()">Terug</button>
     </q-modal>
   </div>

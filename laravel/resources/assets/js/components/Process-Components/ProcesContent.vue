@@ -10,9 +10,7 @@
       <template v-if="currentId == 0">
         <hr>
         <button class="primary" @click="setDone">Rond stap af</button>
-        <app-modal>
-          <img src="../../assets/plattegrond_main.jpg" class="responsive">
-        </app-modal>
+        <app-modal><img src="../../assets/plattegrond_main.jpg" class="responsive"></app-modal>
       </template>
     </div>
 
@@ -26,9 +24,7 @@
       <template v-if="currentId == 1">
         <hr>
         <button class="primary" @click="setDone">Rond stap af</button>
-        <app-modal>
-          <img src="../../assets/plattegrond_ehbo.jpg" class="responsive">
-        </app-modal>
+        <app-modal><img src="../../assets/plattegrond_ehbo.jpg" class="responsive"></app-modal>
       </template>
     </div>
 
@@ -49,9 +45,7 @@
       <template v-if="currentId == 2">
         <hr>
         <button class="primary" @click="setDone">Rond stap af</button>
-        <app-modal>
-          <img src="../../assets/plattegrond_foto.jpg" class="responsive">
-        </app-modal>
+        <app-modal><img src="../../assets/plattegrond_foto.jpg" class="responsive"></app-modal>
       </template>
     </div>
 
@@ -74,9 +68,7 @@
       </div>
       <template v-if="currentId == 3">
         <button class="primary" @click="setDone">Rond stap af</button>
-        <app-modal>
-          <img src="../../assets/plattegrond_gipsen.jpg" class="responsive">
-        </app-modal>
+        <app-modal><img src="../../assets/plattegrond_gipsen.jpg" class="responsive"></app-modal>
       </template>
     </div>
 
