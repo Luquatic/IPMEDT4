@@ -19,6 +19,10 @@ class VakkenController extends Controller
         return Vak::where('jaar', $jaar)->where('periode', $periode)->get();
     }
 
+    public function ec($jaar) {
+        return Vak::where('jaar', $jaar)->where('gehaald', $gehaald = 1)->get();
+    }
+
     public function gehaald($naam){
 //        $vak = new Vak();
 //
