@@ -20,7 +20,8 @@ class VakkenController extends Controller
     }
 
     public function ec($jaar) {
-        return Vak::where('jaar', $jaar)->where('gehaald', $gehaald = 1)->get();
+        $totaal = Vak::table('ec')->where('gehaald', 1)->count();
+        return $totaal;
     }
 
     public function gehaald($naam){
