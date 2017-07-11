@@ -16,7 +16,12 @@ class VakkenController extends Controller
     }
 
     public function periode($jaar, $periode) {
-        return Vak::where('jaar', $jaar)->where('periode', $periode)->get();
+        if ($periode == 5) {
+            return Vak::where('jaar', $jaar)->get();
+        } else {
+            return Vak::where('jaar', $jaar)->where('periode', $periode)->get();
+        }
+
     }
 
     public function ec($jaar) {
